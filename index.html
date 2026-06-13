@@ -5,395 +5,1606 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Lead Automates — Never Lose a Lead Again | Lead Management & Follow-Up Systems</title>
-  <meta name="description" content="Lead Automates builds lead management and follow-up systems for real estate teams and service businesses. Capture leads, respond faster, recover missed calls, connect your CRM, and book more appointments." />
-  <meta name="keywords" content="lead management, lead follow-up, missed call recovery, appointment booking, real estate leads, lead automation, instant lead response, lead nurturing, CRM integration, service business leads" />
+  <title>Lead Automates — Lead Follow-Up, AI Voice Agents & Booking Automation</title>
+  <meta name="description" content="Lead Automates helps service businesses capture leads, respond instantly, recover missed calls, automate follow-up, connect CRMs, and book more appointments." />
+  <meta name="keywords" content="lead automation, AI voice agents, missed call recovery, lead follow up, CRM automation, appointment booking, WhatsApp automation, service business automation, real estate automation" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0f2240" />
+  <meta name="theme-color" content="#10233f" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Lead Automates — Never Lose a Lead Again" />
-  <meta property="og:description" content="Lead management and follow-up systems that help businesses capture leads, respond faster, recover missed calls, connect your CRM, and book more appointments." />
+  <meta property="og:description" content="Lead capture, instant response, missed-call recovery, CRM follow-up, AI voice agents, and appointment booking systems for service businesses." />
 
-  <!-- Favicon (inline SVG logo mark) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232f6fed'/%3E%3Cstop offset='1' stop-color='%2316a37a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M9 17.5l4 4 10-11' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <!-- Inline Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2310233f'/%3E%3Cpath d='M8 18l5 5 11-13' fill='none' stroke='%2338d39f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 
   <style>
     :root {
-      --navy: #0f2240;
-      --navy-soft: #25395c;
+      --ink: #10233f;
+      --ink-2: #203653;
+      --muted: #68758a;
+      --soft: #f5f7fb;
+      --soft-2: #eef4ff;
+      --white: #ffffff;
       --blue: #2f6fed;
-      --blue-soft: #e8f0ff;
-      --green: #16a37a;
-      --green-soft: #e6f7f1;
-      --bg: #ffffff;
-      --panel: #f7f9fc;
-      --line: #e6ebf2;
-      --muted: #5c6b82;
-      --shadow: 0 10px 30px rgba(15, 34, 64, 0.08);
-      --shadow-lg: 0 20px 50px rgba(15, 34, 64, 0.12);
-      --radius: 18px;
-      --radius-sm: 12px;
+      --blue-dark: #1f55c8;
+      --green: #18a77d;
+      --green-dark: #0f8062;
+      --cream: #fff8ee;
+      --line: #dde6f2;
+      --line-soft: rgba(16, 35, 63, 0.1);
+      --shadow: 0 14px 40px rgba(16, 35, 63, 0.08);
+      --shadow-lg: 0 24px 70px rgba(16, 35, 63, 0.14);
+      --radius: 22px;
+      --radius-sm: 14px;
       --maxw: 1140px;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--navy);
-      background: var(--bg);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
 
-    h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; font-weight: 800; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      background: #fbfcfe;
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
 
-    section { padding: 88px 0; }
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 92px 0;
+      position: relative;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+      color: var(--ink);
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 70px);
+      font-weight: 850;
+    }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      font-weight: 820;
+    }
+
+    h3 {
+      font-size: 21px;
+      font-weight: 780;
+    }
+
+    p {
+      color: var(--muted);
+    }
 
     .eyebrow {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--blue);
-      background: var(--blue-soft);
-      padding: 6px 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 8px 14px;
+      border: 1px solid rgba(47, 111, 237, 0.14);
       border-radius: 999px;
+      background: rgba(47, 111, 237, 0.07);
+      color: var(--blue-dark);
+      font-size: 13px;
+      font-weight: 760;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
       margin-bottom: 18px;
     }
 
-    .section-head { max-width: 720px; margin: 0 auto 52px; text-align: center; }
-    .section-head h2 { font-size: clamp(26px, 4vw, 38px); }
-    .section-head p { color: var(--muted); margin-top: 14px; font-size: 17px; }
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 5px rgba(24, 167, 125, 0.12);
+    }
 
-    /* Buttons */
+    .section-head {
+      max-width: 760px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-head p {
+      margin-top: 16px;
+      font-size: 17px;
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      font-weight: 700;
-      font-size: 15px;
-      padding: 14px 26px;
+      gap: 9px;
+      padding: 14px 24px;
       border-radius: 999px;
       border: 1px solid transparent;
-      cursor: pointer;
+      font-size: 15px;
+      font-weight: 780;
       text-decoration: none;
-      transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
       white-space: nowrap;
+      font-family: inherit;
     }
-    .btn-primary { background: var(--blue); color: #fff; box-shadow: 0 8px 20px rgba(47,111,237,.28); }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(47,111,237,.36); }
-    .btn-ghost { background: #fff; color: var(--navy); border-color: var(--line); }
-    .btn-ghost:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
-    .btn-green { background: var(--green); color: #fff; box-shadow: 0 8px 20px rgba(22,163,122,.28); }
-    .btn-green:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(22,163,122,.36); }
-    .btn svg { width: 18px; height: 18px; }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--blue), #245fd9);
+      color: #fff;
+      box-shadow: 0 14px 30px rgba(47, 111, 237, 0.24);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 18px 40px rgba(47, 111, 237, 0.34);
+    }
+
+    .btn-green {
+      background: linear-gradient(135deg, var(--green), #12936d);
+      color: #fff;
+      box-shadow: 0 14px 30px rgba(24, 167, 125, 0.22);
+    }
+
+    .btn-green:hover {
+      box-shadow: 0 18px 40px rgba(24, 167, 125, 0.32);
+    }
+
+    .btn-light {
+      background: rgba(255, 255, 255, 0.85);
+      color: var(--ink);
+      border-color: var(--line);
+      box-shadow: 0 8px 24px rgba(16, 35, 63, 0.06);
+    }
+
+    .btn-light:hover {
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      flex: none;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .75s ease, transform .75s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     /* Header */
     header {
-      position: sticky; top: 0; z-index: 50;
-      background: rgba(255,255,255,.86);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 80;
+      background: rgba(251, 252, 254, 0.78);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(16, 35, 63, 0.08);
     }
-    .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-    .logo { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; color: var(--navy); }
-    .logo svg { width: 34px; height: 34px; flex: none; }
-    .logo .logo-text { font-weight: 800; font-size: 20px; letter-spacing: -0.02em; }
-    .logo .logo-text span { color: var(--blue); }
-    .nav-links { display: flex; align-items: center; gap: 28px; }
-    .nav-links a { color: var(--navy-soft); text-decoration: none; font-weight: 600; font-size: 15px; }
-    .nav-links a:hover { color: var(--blue); }
-    .nav-cta { display: flex; align-items: center; gap: 14px; }
-    .menu-btn { display: none; background: none; border: 0; cursor: pointer; font-size: 26px; color: var(--navy); }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+      color: var(--ink);
+      flex: none;
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 70% 20%, rgba(56, 211, 159, 0.9), transparent 27%),
+        linear-gradient(145deg, #10233f, #1b4278);
+      box-shadow: 0 10px 24px rgba(16, 35, 63, 0.18);
+    }
+
+    .logo-mark svg {
+      width: 21px;
+      height: 21px;
+      color: #fff;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: 840;
+      letter-spacing: -0.035em;
+    }
+
+    .logo-text span {
+      color: var(--blue);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--ink-2);
+      font-size: 15px;
+      font-weight: 680;
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: var(--white);
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(16, 35, 63, 0.08);
+      color: var(--ink);
+    }
+
+    .menu-btn span {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: currentColor;
+      margin: 4px auto;
+      border-radius: 99px;
+    }
 
     /* Hero */
-    .hero { padding: 96px 0 84px; position: relative; overflow: hidden; }
-    .hero::before {
-      content: ""; position: absolute; inset: 0;
+    .hero {
+      padding: 98px 0 84px;
+      overflow: hidden;
       background:
-        radial-gradient(700px 360px at 80% -10%, var(--blue-soft), transparent 60%),
-        radial-gradient(640px 340px at 0% 110%, var(--green-soft), transparent 60%);
-      z-index: -1;
+        radial-gradient(900px 420px at 84% 6%, rgba(47, 111, 237, 0.14), transparent 62%),
+        radial-gradient(820px 380px at 5% 92%, rgba(24, 167, 125, 0.12), transparent 60%),
+        linear-gradient(180deg, #fbfcfe 0%, #f6f9ff 100%);
     }
-    .hero-inner { max-width: 820px; }
-    .hero h1 { font-size: clamp(36px, 6vw, 60px); }
-    .hero .sub { font-size: clamp(17px, 2.2vw, 20px); color: var(--navy-soft); margin-top: 22px; max-width: 680px; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
-    .trust { margin-top: 26px; font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
-    .trust .tick { color: var(--green); font-weight: 800; }
 
-    /* Cards grid */
-    .grid { display: grid; gap: 22px; }
-    .grid-3 { grid-template-columns: repeat(3, 1fr); }
-    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(16, 35, 63, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16, 35, 63, 0.035) 1px, transparent 1px);
+      background-size: 46px 46px;
+      mask-image: linear-gradient(to bottom, black, transparent 78%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+    }
+
+    .hero-copy .sub {
+      margin-top: 22px;
+      max-width: 610px;
+      font-size: clamp(17px, 2vw, 20px);
+      color: #4b5d77;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .hero-proof {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .proof-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(16, 35, 63, 0.08);
+      border-radius: 999px;
+      color: var(--ink-2);
+      font-size: 13px;
+      font-weight: 680;
+      box-shadow: 0 8px 18px rgba(16, 35, 63, 0.04);
+    }
+
+    .proof-pill svg {
+      width: 15px;
+      height: 15px;
+      color: var(--green);
+      flex: none;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .dashboard {
+      position: relative;
+      border: 1px solid rgba(16, 35, 63, 0.1);
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.84);
+      box-shadow: var(--shadow-lg);
+      backdrop-filter: blur(16px);
+      overflow: hidden;
+      padding: 20px;
+      animation: floatCard 6s ease-in-out infinite;
+    }
+
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .dash-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+    }
+
+    .dash-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 780;
+    }
+
+    .dash-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 6px rgba(24, 167, 125, 0.12);
+    }
+
+    .dash-status {
+      color: var(--green-dark);
+      background: rgba(24, 167, 125, 0.1);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 780;
+    }
+
+    .lead-row {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 13px;
+      border: 1px solid rgba(16, 35, 63, 0.08);
+      border-radius: 16px;
+      background: #fff;
+      margin-bottom: 10px;
+      box-shadow: 0 8px 18px rgba(16, 35, 63, 0.04);
+    }
+
+    .lead-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      background: var(--soft-2);
+      color: var(--blue);
+    }
+
+    .lead-icon.green {
+      background: rgba(24, 167, 125, 0.1);
+      color: var(--green);
+    }
+
+    .lead-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .lead-info strong {
+      display: block;
+      font-size: 14px;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+
+    .lead-info span {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .lead-tag {
+      font-size: 12px;
+      font-weight: 780;
+      color: var(--blue-dark);
+      background: rgba(47, 111, 237, 0.09);
+      padding: 6px 9px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .automation-flow {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .flow-step {
+      text-align: center;
+      padding: 13px 8px;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #ffffff, #f7faff);
+      border: 1px solid rgba(16, 35, 63, 0.08);
+    }
+
+    .flow-step b {
+      display: block;
+      font-size: 13px;
+      color: var(--ink);
+    }
+
+    .flow-step span {
+      display: block;
+      margin-top: 3px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .floating-note {
+      position: absolute;
+      right: -22px;
+      bottom: 28px;
+      max-width: 210px;
+      padding: 14px 15px;
+      border-radius: 18px;
+      background: var(--ink);
+      color: #fff;
+      box-shadow: var(--shadow-lg);
+      animation: floatNote 5.5s ease-in-out infinite;
+    }
+
+    @keyframes floatNote {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(8px) rotate(-1deg); }
+    }
+
+    .floating-note strong {
+      display: block;
+      color: #fff;
+      font-size: 13px;
+    }
+
+    .floating-note span {
+      display: block;
+      color: #c8d5e9;
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    /* Stats */
+    .stats {
+      padding: 28px 0;
+      background: #fff;
+      border-top: 1px solid var(--line-soft);
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .stat {
+      padding: 18px;
+      border-radius: 18px;
+      background: #fbfcfe;
+      border: 1px solid rgba(16, 35, 63, 0.08);
+    }
+
+    .stat b {
+      display: block;
+      font-size: 26px;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 3px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 640;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      gap: 22px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     .card {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
+      position: relative;
+      overflow: hidden;
       padding: 28px;
+      border: 1px solid rgba(16, 35, 63, 0.08);
+      border-radius: var(--radius);
+      background: #fff;
       box-shadow: var(--shadow);
-      transition: transform .2s ease, box-shadow .2s ease;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
     }
-    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-    .card .ico {
-      width: 46px; height: 46px; border-radius: 12px;
-      display: grid; place-items: center; font-size: 22px; margin-bottom: 16px;
-      background: var(--blue-soft);
-    }
-    .card.green .ico { background: var(--green-soft); }
-    .card h3 { font-size: 19px; margin-bottom: 8px; }
-    .card p { color: var(--muted); font-size: 15px; }
 
-    /* Problem */
-    .problem { background: var(--panel); }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(420px 160px at 20% 0%, rgba(47, 111, 237, 0.07), transparent 65%);
+      opacity: 0;
+      transition: opacity .22s ease;
+      pointer-events: none;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(47, 111, 237, 0.2);
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .icon {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 17px;
+      background: rgba(47, 111, 237, 0.09);
+      color: var(--blue);
+    }
+
+    .icon.green {
+      background: rgba(24, 167, 125, 0.1);
+      color: var(--green);
+    }
+
+    .icon.dark {
+      background: rgba(16, 35, 63, 0.08);
+      color: var(--ink);
+    }
+
+    .icon svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    .card h3 {
+      position: relative;
+      margin-bottom: 9px;
+    }
+
+    .card p {
+      position: relative;
+      font-size: 15px;
+    }
+
+    .soft-section {
+      background:
+        radial-gradient(700px 340px at 10% 10%, rgba(24, 167, 125, 0.08), transparent 58%),
+        linear-gradient(180deg, #f7f9fd, #ffffff);
+    }
+
+    /* Process */
+    .process {
+      background: var(--ink);
+      overflow: hidden;
+    }
+
+    .process::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(700px 320px at 10% 15%, rgba(47, 111, 237, 0.24), transparent 62%),
+        radial-gradient(760px 360px at 86% 78%, rgba(24, 167, 125, 0.18), transparent 62%);
+      pointer-events: none;
+    }
+
+    .process .section-head,
+    .process .section-head h2 {
+      color: #fff;
+    }
+
+    .process .section-head p {
+      color: #b8c6d8;
+    }
+
+    .steps {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      position: relative;
+      padding: 24px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+    }
+
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: rgba(56, 211, 159, 0.16);
+      color: #62f0bd;
+      font-weight: 840;
+      margin-bottom: 18px;
+    }
+
+    .step h3 {
+      color: #fff;
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: #bdcadb;
+      font-size: 14px;
+    }
 
     /* Benefits */
-    .benefits-list {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
-      max-width: 880px; margin: 0 auto;
+    .benefits-wrap {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 44px;
+      align-items: center;
     }
+
+    .benefits-copy p {
+      margin-top: 16px;
+      font-size: 17px;
+    }
+
+    .benefit-list {
+      display: grid;
+      gap: 14px;
+    }
+
     .benefit {
-      display: flex; align-items: center; gap: 12px;
-      background: #fff; border: 1px solid var(--line);
-      border-radius: var(--radius-sm); padding: 16px 18px; box-shadow: var(--shadow);
-      font-weight: 600;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid rgba(16, 35, 63, 0.08);
+      box-shadow: 0 10px 28px rgba(16, 35, 63, 0.05);
     }
-    .benefit .check {
-      flex: none; width: 26px; height: 26px; border-radius: 50%;
-      background: var(--green-soft); color: var(--green);
-      display: grid; place-items: center; font-weight: 800; font-size: 14px;
+
+    .check {
+      flex: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(24, 167, 125, 0.12);
+      color: var(--green);
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .benefit strong {
+      display: block;
+      color: var(--ink);
+      font-size: 16px;
+      margin-bottom: 2px;
+    }
+
+    .benefit span {
+      color: var(--muted);
+      font-size: 14px;
     }
 
     /* Plans */
-    .plans { background: var(--panel); }
-    .plan {
-      background: #fff; border: 1px solid var(--line);
-      border-radius: var(--radius); padding: 30px 28px;
-      box-shadow: var(--shadow); display: flex; flex-direction: column;
-      transition: transform .2s ease, box-shadow .2s ease;
+    .plans {
+      background:
+        radial-gradient(650px 260px at 80% 0%, rgba(47, 111, 237, 0.09), transparent 60%),
+        #f7f9fd;
     }
-    .plan:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-    .plan.featured { border: 2px solid var(--blue); box-shadow: var(--shadow-lg); }
-    .plan .tag {
-      align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .06em;
-      text-transform: uppercase; color: var(--blue); background: var(--blue-soft);
-      padding: 5px 12px; border-radius: 999px; margin-bottom: 14px;
-    }
-    .plan h3 { font-size: 22px; }
-    .plan .desc { color: var(--muted); font-size: 15px; margin: 8px 0 18px; }
-    .plan ul { list-style: none; margin-bottom: 18px; display: grid; gap: 10px; }
-    .plan li { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; color: var(--navy-soft); }
-    .plan li::before { content: "✓"; color: var(--green); font-weight: 800; flex: none; }
-    .plan .note {
-      font-size: 13px; color: var(--muted); background: var(--panel);
-      border: 1px solid var(--line); border-radius: var(--radius-sm);
-      padding: 12px 14px; margin-bottom: 20px;
-    }
-    .plan .btn { margin-top: auto; width: 100%; }
 
-    /* Reviews */
-    .review p { font-size: 15px; color: var(--navy-soft); font-style: italic; }
-    .review .stars { color: #f5a623; margin-bottom: 12px; letter-spacing: 2px; }
-    .review .who { margin-top: 16px; font-weight: 700; font-size: 15px; }
-    .review .role { color: var(--muted); font-weight: 500; font-size: 14px; }
+    .plan {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      border-radius: 26px;
+      background: #fff;
+      border: 1px solid rgba(16, 35, 63, 0.09);
+      box-shadow: var(--shadow);
+      transition: transform .22s ease, box-shadow .22s ease;
+    }
+
+    .plan:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .plan.featured {
+      border: 2px solid rgba(47, 111, 237, 0.75);
+      box-shadow: 0 26px 72px rgba(47, 111, 237, 0.16);
+    }
+
+    .plan.featured::before {
+      content: "Best for most businesses";
+      position: absolute;
+      top: -14px;
+      left: 24px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--blue);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 820;
+    }
+
+    .plan .tag {
+      width: fit-content;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(16, 35, 63, 0.06);
+      color: var(--ink-2);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .plan h3 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .plan .desc {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .plan ul {
+      list-style: none;
+      display: grid;
+      gap: 11px;
+      margin-bottom: 24px;
+    }
+
+    .plan li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--ink-2);
+      font-size: 15px;
+    }
+
+    .plan li::before {
+      content: "✓";
+      flex: none;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(24, 167, 125, 0.12);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+      margin-top: 1px;
+    }
+
+    .plan .btn {
+      width: 100%;
+      margin-top: auto;
+    }
 
     /* Form */
-    .booking { background: var(--panel); }
+    .booking {
+      background:
+        radial-gradient(720px 320px at 15% 10%, rgba(24, 167, 125, 0.09), transparent 60%),
+        linear-gradient(180deg, #ffffff, #f7f9fd);
+    }
+
     .form-card {
-      background: #fff; border: 1px solid var(--line);
-      border-radius: var(--radius); box-shadow: var(--shadow-lg);
-      padding: 36px; max-width: 820px; margin: 0 auto;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 36px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(16, 35, 63, 0.09);
+      box-shadow: var(--shadow-lg);
     }
+
     .calendar-banner {
-      display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;
-      background: linear-gradient(135deg, var(--blue-soft), var(--green-soft));
-      border: 1px solid var(--line); border-radius: var(--radius-sm);
-      padding: 18px 20px; margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 20px;
+      border-radius: 20px;
+      background:
+        radial-gradient(260px 130px at 90% 0%, rgba(24, 167, 125, 0.18), transparent 70%),
+        linear-gradient(135deg, #eef4ff, #fff8ee);
+      border: 1px solid rgba(16, 35, 63, 0.08);
+      margin-bottom: 26px;
     }
-    .calendar-banner .cb-text { font-size: 15px; }
-    .calendar-banner .cb-text strong { display: block; font-size: 16px; }
-    .calendar-banner .cb-text span { color: var(--muted); }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    .field { display: flex; flex-direction: column; }
-    .field.full { grid-column: 1 / -1; }
-    .field label { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
-    .field label .req { color: var(--blue); }
-    .field input, .field select, .field textarea {
-      font-family: inherit; font-size: 15px; color: var(--navy);
-      padding: 12px 14px; border: 1px solid var(--line);
-      border-radius: var(--radius-sm); background: #fff; transition: border .15s ease, box-shadow .15s ease;
+
+    .calendar-banner strong {
+      display: block;
+      color: var(--ink);
+      font-size: 17px;
+      margin-bottom: 2px;
     }
-    .field input:focus, .field select:focus, .field textarea:focus {
-      outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-soft);
+
+    .calendar-banner span {
+      color: var(--muted);
+      font-size: 14px;
     }
-    .field textarea { resize: vertical; min-height: 90px; }
-    .field .err { color: #d23b3b; font-size: 13px; margin-top: 5px; display: none; }
-    .field.invalid input, .field.invalid select { border-color: #d23b3b; }
-    .field.invalid .err { display: block; }
-    .form-actions { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
-    .form-note { font-size: 13px; color: var(--muted); margin-top: 14px; }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field label {
+      font-size: 14px;
+      font-weight: 760;
+      color: var(--ink);
+      margin-bottom: 7px;
+    }
+
+    .field label .req {
+      color: var(--green);
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      font-family: inherit;
+      font-size: 15px;
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 13px 14px;
+      outline: none;
+      transition: border-color .16s ease, box-shadow .16s ease;
+    }
+
+    .field textarea {
+      min-height: 104px;
+      resize: vertical;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: rgba(47, 111, 237, 0.7);
+      box-shadow: 0 0 0 4px rgba(47, 111, 237, 0.1);
+    }
+
+    .field .err {
+      display: none;
+      color: #c73737;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    .field.invalid input,
+    .field.invalid select,
+    .field.invalid textarea {
+      border-color: #c73737;
+      box-shadow: 0 0 0 4px rgba(199, 55, 55, 0.08);
+    }
+
+    .field.invalid .err {
+      display: block;
+    }
+
+    .form-actions {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .small-note {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
     .success {
-      display: none; margin-top: 22px; padding: 16px 18px;
-      background: var(--green-soft); border: 1px solid #bfe8d8;
-      border-radius: var(--radius-sm); color: #0c6b4f; font-weight: 600;
+      display: none;
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: rgba(24, 167, 125, 0.1);
+      border: 1px solid rgba(24, 167, 125, 0.22);
+      color: var(--green-dark);
+      font-weight: 680;
+      font-size: 14px;
     }
-    .success.show { display: block; }
-    .success a { color: #0c6b4f; font-weight: 800; }
+
+    .success.show {
+      display: block;
+    }
+
+    .success a {
+      color: var(--green-dark);
+      font-weight: 850;
+    }
 
     /* Footer */
-    footer { background: var(--navy); color: #cdd8ea; padding: 56px 0 36px; }
-    footer .f-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; }
-    footer .f-brand .logo .logo-text { color: #fff; }
-    footer .f-brand .logo .logo-text span { color: #7fb0ff; }
-    footer .tagline { margin-top: 10px; color: #9fb0cc; }
-    footer .f-contact a { color: #cdd8ea; text-decoration: none; }
-    footer .f-contact a:hover { color: #fff; }
-    footer .f-contact div { margin-bottom: 8px; font-size: 15px; }
-    footer .copy { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); font-size: 13px; color: #8497b8; }
+    footer {
+      padding: 58px 0 34px;
+      background: var(--ink);
+      color: #c9d6e7;
+    }
+
+    .footer-grid {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    footer .logo-text {
+      color: #fff;
+    }
+
+    footer .logo-text span {
+      color: #79a8ff;
+    }
+
+    .footer-text {
+      margin-top: 12px;
+      max-width: 430px;
+      color: #a9b8cc;
+      font-size: 15px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+      text-align: right;
+    }
+
+    .footer-links a {
+      color: #dce6f3;
+      text-decoration: none;
+      font-weight: 660;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .copy {
+      margin-top: 34px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.11);
+      color: #8293ac;
+      font-size: 13px;
+    }
 
     /* Responsive */
-    @media (max-width: 880px) {
-      .grid-3 { grid-template-columns: 1fr 1fr; }
-      .benefits-list { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 720px) {
-      section { padding: 64px 0; }
-      .nav-links { display: none; }
-      .menu-btn { display: block; }
-      .nav-links.open {
-        display: flex; flex-direction: column; align-items: flex-start; gap: 16px;
-        position: absolute; top: 72px; left: 0; right: 0;
-        background: #fff; border-bottom: 1px solid var(--line); padding: 20px 24px;
+    @media (max-width: 980px) {
+      .hero-grid,
+      .benefits-wrap {
+        grid-template-columns: 1fr;
       }
-      .nav-cta .btn-ghost { display: none; }
-      .grid-3, .grid-2 { grid-template-columns: 1fr; }
-      .benefits-list { grid-template-columns: 1fr; }
-      .form-grid { grid-template-columns: 1fr; }
-      .form-card { padding: 24px; }
+
+      .hero-copy {
+        max-width: 760px;
+      }
+
+      .hero-visual {
+        max-width: 650px;
+      }
+
+      .steps,
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 860px) {
+      .grid-3 {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 76px;
+        left: 16px;
+        right: 16px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px;
+        border-radius: 20px;
+        background: #fff;
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 14px 14px;
+        border-radius: 12px;
+      }
+
+      .nav-links a:hover {
+        background: var(--soft);
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-cta .btn {
+        display: none;
+      }
+    }
+
+    @media (max-width: 680px) {
+      section {
+        padding: 68px 0;
+      }
+
+      .wrap {
+        padding: 0 18px;
+      }
+
+      .hero {
+        padding: 78px 0 64px;
+      }
+
+      .grid-3,
+      .grid-2,
+      .steps,
+      .stats-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .automation-flow {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .floating-note {
+        position: static;
+        margin-top: 16px;
+        max-width: none;
+      }
+
+      .form-card {
+        padding: 24px;
+        border-radius: 24px;
+      }
+
+      .footer-links {
+        text-align: left;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-actions {
+        width: 100%;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      * { transition: none !important; }
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- 1. HEADER -->
+  <!-- Header -->
   <header>
     <div class="wrap nav">
       <a href="#top" class="logo" aria-label="Lead Automates home">
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-          <defs>
-            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#2f6fed"/>
-              <stop offset="1" stop-color="#16a37a"/>
-            </linearGradient>
-          </defs>
-          <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#lg)"/>
-          <path d="M11 21.5l5 5 13-14" fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="29.5" cy="11" r="2.4" fill="#ffffff" opacity="0.9"/>
-        </svg>
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 13.5l4.2 4.2L19 7.8" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
         <span class="logo-text">Lead<span>Automates</span></span>
       </a>
+
       <nav class="nav-links" id="navLinks">
         <a href="#services" onclick="closeMenu()">Services</a>
+        <a href="#process" onclick="closeMenu()">Process</a>
         <a href="#plans" onclick="closeMenu()">Plans</a>
         <a href="#book" onclick="closeMenu()">Book a Call</a>
       </nav>
+
       <div class="nav-cta">
         <a href="#" class="btn btn-primary" onclick="openCalendar(event)">Book Free Call</a>
-        <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+        <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- 2. HERO -->
+  <!-- Hero -->
   <section class="hero" id="top">
-    <div class="wrap hero-inner">
-      <span class="eyebrow">Lead Management &amp; Follow-Up Systems</span>
-      <h1>Never Lose a Lead Again</h1>
-      <p class="sub">We build lead management systems that help businesses capture leads, respond faster, follow up automatically, recover missed calls, and book more appointments.</p>
-      <div class="hero-actions">
-        <a href="#plans" class="btn btn-primary">View Plans</a>
-        <a href="#" class="btn btn-ghost" onclick="openCalendar(event)">Book a Free Call</a>
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Lead Automation for Service Businesses</span>
+        <h1>Turn every new lead into a real conversation.</h1>
+        <p class="sub">
+          We build clean lead systems that capture enquiries, reply instantly, recover missed calls, follow up automatically, and book more appointments without adding extra work to your team.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#plans" class="btn btn-primary">
+            View Plans
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#" class="btn btn-light" onclick="openCalendar(event)">Book a Free Call</a>
+        </div>
+
+        <div class="hero-proof">
+          <span class="proof-pill">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Instant lead response
+          </span>
+          <span class="proof-pill">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Missed-call recovery
+          </span>
+          <span class="proof-pill">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            CRM-ready setup
+          </span>
+        </div>
       </div>
-      <p class="trust"><span class="tick">✓</span> Built for businesses that want faster response times, better follow-up, and more booked appointments.</p>
+
+      <div class="hero-visual reveal">
+        <div class="dashboard">
+          <div class="dash-top">
+            <div class="dash-title">
+              <span class="dash-dot"></span>
+              Live Lead System
+            </div>
+            <span class="dash-status">Active</span>
+          </div>
+
+          <div class="lead-row">
+            <div class="lead-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v12H8l-4 4V5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="lead-info">
+              <strong>Website enquiry captured</strong>
+              <span>Reply sent in under one minute</span>
+            </div>
+            <span class="lead-tag">New</span>
+          </div>
+
+          <div class="lead-row">
+            <div class="lead-icon green">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2.1L9 10.6a16 16 0 0 0 4.4 4.4l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="lead-info">
+              <strong>Missed call recovered</strong>
+              <span>Callback text sent automatically</span>
+            </div>
+            <span class="lead-tag">Saved</span>
+          </div>
+
+          <div class="lead-row">
+            <div class="lead-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="lead-info">
+              <strong>Appointment booked</strong>
+              <span>Reminder scheduled before the call</span>
+            </div>
+            <span class="lead-tag">Booked</span>
+          </div>
+
+          <div class="automation-flow">
+            <div class="flow-step"><b>Capture</b><span>Forms & calls</span></div>
+            <div class="flow-step"><b>Reply</b><span>SMS / email</span></div>
+            <div class="flow-step"><b>Follow up</b><span>Sequences</span></div>
+            <div class="flow-step"><b>Book</b><span>Calendar</span></div>
+          </div>
+        </div>
+
+        <div class="floating-note">
+          <strong>AI voice agents available</strong>
+          <span>For inbound calls, qualification, and appointment booking.</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 3. PROBLEM -->
-  <section class="problem" id="problem">
+  <!-- Stats -->
+  <div class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat reveal">
+        <b>24/7</b>
+        <span>Lead response coverage</span>
+      </div>
+      <div class="stat reveal">
+        <b>1 min</b>
+        <span>Fast first-touch goal</span>
+      </div>
+      <div class="stat reveal">
+        <b>Multi</b>
+        <span>SMS, email, WhatsApp, voice</span>
+      </div>
+      <div class="stat reveal">
+        <b>CRM</b>
+        <span>Organized lead pipeline</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Problem -->
+  <section class="soft-section" id="problem">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">The Problem</span>
-        <h2>Leads Are Expensive. Losing Them Should Not Be Normal.</h2>
-        <p>Most businesses lose opportunities because new leads are contacted too late, follow-up is inconsistent, and missed calls are not recovered.</p>
+      <div class="section-head reveal">
+        <span class="eyebrow">The Real Problem</span>
+        <h2>Most leads are not lost because the offer is bad.</h2>
+        <p>
+          They are lost because the response is slow, the follow-up is manual, and the team gets busy before the lead is properly handled.
+        </p>
       </div>
+
       <div class="grid grid-3">
-        <div class="card"><div class="ico">⏱️</div><h3>Slow Response</h3><p>Leads go cold when they wait minutes — or hours — for a reply.</p></div>
-        <div class="card"><div class="ico">📞</div><h3>Missed Calls</h3><p>Every unanswered call is a potential customer walking to a competitor.</p></div>
-        <div class="card"><div class="ico">🔁</div><h3>No Follow-Up</h3><p>One message is rarely enough. Inconsistent follow-up loses deals.</p></div>
+        <div class="card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Slow first reply</h3>
+          <p>When a lead waits too long, they usually contact another business before your team gets back to them.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon green">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2.1L9 10.6a16 16 0 0 0 4.4 4.4l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Missed calls</h3>
+          <p>Unanswered calls often come from high-intent buyers. A simple recovery text can bring them back.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon dark">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Weak follow-up</h3>
+          <p>Most leads need more than one message. Automation keeps the conversation moving without chasing manually.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. SERVICES -->
+  <!-- Services -->
   <section id="services">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Services</span>
-        <h2>What We Set Up For You</h2>
+      <div class="section-head reveal">
+        <span class="eyebrow">What We Build</span>
+        <h2>A practical system for capturing, replying, following up, and booking.</h2>
+        <p>
+          No complicated dashboards or bloated setup. Just the core automations your business needs to respond faster and stay organized.
+        </p>
       </div>
+
       <div class="grid grid-3">
-        <div class="card"><div class="ico">🎯</div><h3>Lead Capture</h3><p>Connect website forms, landing pages, Facebook leads, Google leads, and WhatsApp enquiries.</p></div>
-        <div class="card green"><div class="ico">⚡</div><h3>Instant Response</h3><p>Send automatic SMS, email, or WhatsApp messages when a new lead comes in.</p></div>
-        <div class="card"><div class="ico">🔄</div><h3>Follow-Up Automation</h3><p>Keep following up with leads who do not respond right away.</p></div>
-        <div class="card green"><div class="ico">📲</div><h3>Missed Call Recovery</h3><p>Send a callback text when someone calls and your team misses it.</p></div>
-        <div class="card"><div class="ico">📅</div><h3>Appointment Booking</h3><p>Send booking links and reminders so more leads turn into meetings.</p></div>
-        <div class="card green"><div class="ico">📊</div><h3>Lead Dashboard</h3><p>Keep every lead and status organized in one place.</p></div>
+        <div class="card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Lead capture</h3>
+          <p>Connect website forms, landing pages, Facebook leads, Google leads, WhatsApp enquiries, and call sources.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon green">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h8l-1 8 11-13h-8l1-7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Instant response</h3>
+          <p>Send automatic SMS, email, or WhatsApp messages as soon as a new lead comes in.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Follow-up sequences</h3>
+          <p>Automatically follow up with leads who do not respond right away, using simple and natural messages.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon green">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2.1L9 10.6a16 16 0 0 0 4.4 4.4l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>AI voice agents</h3>
+          <p>Set up voice agents for inbound calls, lead qualification, missed-call handling, and appointment booking.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Appointment booking</h3>
+          <p>Send booking links, reminders, and confirmations so more leads turn into scheduled calls.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon green">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14M4 19h16M8 7h8M8 11h8M8 15h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>CRM dashboard</h3>
+          <p>Keep every lead, status, source, note, and appointment organized in one clean system.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 5. PLANS (moved up: after Services) -->
+  <!-- Process -->
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Simple Process</span>
+        <h2>Built around the way your business already works.</h2>
+        <p>
+          We keep the setup focused: understand your current lead flow, connect the right tools, automate the follow-up, then improve it after testing.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <h3>Map your lead flow</h3>
+          <p>We review where leads come from, how your team replies, and where opportunities are currently being missed.</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <h3>Connect the tools</h3>
+          <p>Forms, CRM, SMS, email, WhatsApp, calendar, and voice tools are connected into one clear workflow.</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <h3>Automate follow-up</h3>
+          <p>New leads get fast replies, missed calls get recovered, and inactive leads receive natural follow-up messages.</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">4</div>
+          <h3>Test and improve</h3>
+          <p>We test the system, fix weak points, and make sure your team can manage everything easily.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="benefits">
+    <div class="wrap benefits-wrap">
+      <div class="benefits-copy reveal">
+        <span class="eyebrow">Why It Helps</span>
+        <h2>More speed, more consistency, less manual chasing.</h2>
+        <p>
+          The goal is not to replace your team. The goal is to make sure every lead gets handled properly, even when your team is busy, offline, or dealing with other work.
+        </p>
+      </div>
+
+      <div class="benefit-list">
+        <div class="benefit reveal">
+          <span class="check">✓</span>
+          <div>
+            <strong>Respond before competitors do</strong>
+            <span>New leads receive a fast first message while their interest is still high.</span>
+          </div>
+        </div>
+
+        <div class="benefit reveal">
+          <span class="check">✓</span>
+          <div>
+            <strong>Recover missed calls automatically</strong>
+            <span>Missed callers get a simple callback message instead of being ignored.</span>
+          </div>
+        </div>
+
+        <div class="benefit reveal">
+          <span class="check">✓</span>
+          <div>
+            <strong>Keep every lead organized</strong>
+            <span>Your team can see lead source, status, follow-up stage, and appointment details in one place.</span>
+          </div>
+        </div>
+
+        <div class="benefit reveal">
+          <span class="check">✓</span>
+          <div>
+            <strong>Book more qualified appointments</strong>
+            <span>Booking links, reminders, and follow-up steps help move leads toward a scheduled call.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans -->
   <section class="plans" id="plans">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Plans</span>
-        <h2>Choose How You Want To Start</h2>
+        <h2>Choose the best starting point.</h2>
+        <p>
+          Start simple, then add more automation as your lead volume grows.
+        </p>
       </div>
-      <div class="grid grid-3">
 
-        <div class="plan">
+      <div class="grid grid-3">
+        <div class="plan reveal">
           <span class="tag">Starter</span>
           <h3>Starter Setup</h3>
-          <p class="desc">For businesses that need instant lead response.</p>
+          <p class="desc">For businesses that need a clean lead response system.</p>
           <ul>
             <li>Lead source connection</li>
             <li>Instant SMS or email response</li>
-            <li>Missed call text-back</li>
+            <li>Missed-call text-back</li>
             <li>Basic appointment booking</li>
             <li>Lead notifications</li>
           </ul>
-          <button class="btn btn-ghost" onclick="selectPlan('Starter Setup')">Select Starter Setup</button>
+          <button class="btn btn-light" onclick="selectPlan('Starter Setup')">Select Starter Setup</button>
         </div>
 
-        <div class="plan featured">
-          <span class="tag">Most Popular</span>
+        <div class="plan featured reveal">
+          <span class="tag">Popular</span>
           <h3>Follow-Up System</h3>
-          <p class="desc">For businesses that want automated nurturing.</p>
+          <p class="desc">For businesses that want automated nurturing and better lead tracking.</p>
           <ul>
             <li>Everything in Starter Setup</li>
             <li>Follow-up sequences</li>
@@ -406,92 +1617,47 @@
           <button class="btn btn-primary" onclick="selectPlan('Follow-Up System')">Select Follow-Up System</button>
         </div>
 
-        <div class="plan">
+        <div class="plan reveal">
           <span class="tag">Managed</span>
           <h3>Managed Growth System</h3>
-          <p class="desc">For businesses that want everything handled monthly.</p>
+          <p class="desc">For businesses that want the full system managed and improved monthly.</p>
           <ul>
             <li>Everything in Follow-Up System</li>
-            <li>Full CRM integration &amp; management</li>
+            <li>AI voice agent setup</li>
+            <li>Full CRM integration</li>
             <li>Ongoing monitoring</li>
             <li>Fixes and updates</li>
             <li>Monthly improvements</li>
             <li>Priority support</li>
-            <li>System maintenance</li>
           </ul>
           <button class="btn btn-green" onclick="selectPlan('Managed Growth System')">Select Managed Growth System</button>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- 6. BENEFITS -->
-  <section id="benefits">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Why It Works</span>
-        <h2>How This Helps Your Business</h2>
-      </div>
-      <div class="benefits-list">
-        <div class="benefit"><span class="check">✓</span>Respond to leads faster</div>
-        <div class="benefit"><span class="check">✓</span>Reduce missed opportunities</div>
-        <div class="benefit"><span class="check">✓</span>Book more appointments</div>
-        <div class="benefit"><span class="check">✓</span>Save time for your team</div>
-        <div class="benefit"><span class="check">✓</span>Improve lead conversion</div>
-        <div class="benefit"><span class="check">✓</span>Keep every lead organized</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. REVIEWS -->
-  <section class="problem" id="reviews">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Reviews</span>
-        <h2>Built Around The Problems Businesses Actually Face</h2>
-      </div>
-      <div class="grid grid-3">
-        <div class="card review">
-          <div class="stars">★★★★★</div>
-          <p>"Leads used to sit for hours before anyone replied. Now the first message goes out instantly and our booked calls have gone up noticeably."</p>
-          <div class="who">Sarah M.</div>
-          <div class="role">Real Estate Team Lead</div>
-        </div>
-        <div class="card review">
-          <div class="stars">★★★★★</div>
-          <p>"The missed-call text-back alone paid for the whole setup. Callers who would have been lost now reply and book."</p>
-          <div class="who">Daniel R.</div>
-          <div class="role">Brokerage Owner</div>
-        </div>
-        <div class="card review">
-          <div class="stars">★★★★★</div>
-          <p>"Follow-up was always our weak spot. The automated sequences keep working even when the team is busy, and nothing slips through."</p>
-          <div class="who">Mark T.</div>
-          <div class="role">Sales Manager</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8. BOOKING FORM -->
+  <!-- Booking Form -->
   <section class="booking" id="book">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Get Started</span>
-        <h2>Book a Free Strategy Call</h2>
-        <p>Select a plan, choose your preferred meeting time, and send your details. I will follow up with confirmation.</p>
+        <h2>Book a free strategy call.</h2>
+        <p>
+          Share your details and choose a preferred time. We will review your current lead process and suggest the best automation setup.
+        </p>
       </div>
 
-      <div class="form-card">
+      <div class="form-card reveal">
         <div class="calendar-banner">
-          <div class="cb-text">
-            <strong>Prefer to pick a time instantly?</strong>
-            <span>Open the live calendar and choose any open slot.</span>
+          <div>
+            <strong>Want to pick a time directly?</strong>
+            <span>Open the live calendar and choose any available slot.</span>
           </div>
           <a href="#" class="btn btn-primary" onclick="openCalendar(event)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Book on Calendar
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Open Calendar
           </a>
         </div>
 
@@ -501,26 +1667,31 @@
             <input type="text" id="fullName" placeholder="Your full name" />
             <span class="err">Please enter your full name.</span>
           </div>
+
           <div class="field">
             <label>Business Name <span class="req">*</span></label>
             <input type="text" id="businessName" placeholder="Your business name" />
             <span class="err">Please enter your business name.</span>
           </div>
+
           <div class="field">
             <label>Email <span class="req">*</span></label>
             <input type="email" id="email" placeholder="you@company.com" />
             <span class="err">Please enter a valid email.</span>
           </div>
+
           <div class="field">
             <label>Phone / WhatsApp <span class="req">*</span></label>
             <input type="tel" id="phone" placeholder="+1 555 000 0000" />
             <span class="err">Please enter your phone or WhatsApp number.</span>
           </div>
+
           <div class="field">
             <label>Website</label>
             <input type="text" id="website" placeholder="Optional" />
             <span class="err"></span>
           </div>
+
           <div class="field">
             <label>Selected Plan <span class="req">*</span></label>
             <select id="plan">
@@ -532,11 +1703,13 @@
             </select>
             <span class="err">Please select a plan.</span>
           </div>
+
           <div class="field">
             <label>Preferred Date <span class="req">*</span></label>
             <input type="date" id="date" />
             <span class="err">Please choose a date.</span>
           </div>
+
           <div class="field">
             <label>Preferred Time <span class="req">*</span></label>
             <select id="time">
@@ -554,6 +1727,7 @@
             </select>
             <span class="err">Please choose a time.</span>
           </div>
+
           <div class="field">
             <label>Time Zone <span class="req">*</span></label>
             <select id="timezone">
@@ -568,184 +1742,278 @@
             </select>
             <span class="err">Please select a time zone.</span>
           </div>
+
           <div class="field full">
             <label>Message</label>
-            <textarea id="message" placeholder="Tell us a little about your business and goals (optional)"></textarea>
+            <textarea id="message" placeholder="Tell us about your business, lead sources, CRM, or current follow-up problem."></textarea>
             <span class="err"></span>
           </div>
         </div>
 
         <div class="form-actions">
           <button class="btn btn-green" onclick="submitForm()">Send Request</button>
+          <span class="small-note">Your request opens in WhatsApp so you can send it directly.</span>
         </div>
+
         <div class="success" id="success">
           Thank you. Your request has been prepared. WhatsApp has opened so you can send the message and confirm your call.
-          <br>Prefer email? <a id="emailFallback" href="#">Send the same details by email</a>, or <a href="#" onclick="openCalendar(event)">pick a time on the calendar</a>.
+          <br />
+          Prefer email? <a id="emailFallback" href="#">Send the same details by email</a>, or <a href="#" onclick="openCalendar(event)">pick a time on the calendar</a>.
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 9. FOOTER -->
+  <!-- Footer -->
   <footer>
-    <div class="wrap f-grid">
-      <div class="f-brand">
+    <div class="wrap footer-grid">
+      <div>
         <a href="#top" class="logo" aria-label="Lead Automates home">
-          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-            <defs>
-              <linearGradient id="lgf" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#2f6fed"/>
-                <stop offset="1" stop-color="#16a37a"/>
-              </linearGradient>
-            </defs>
-            <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#lgf)"/>
-            <path d="M11 21.5l5 5 13-14" fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="29.5" cy="11" r="2.4" fill="#ffffff" opacity="0.9"/>
-          </svg>
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 13.5l4.2 4.2L19 7.8" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
           <span class="logo-text">Lead<span>Automates</span></span>
         </a>
-        <p class="tagline">Never lose a lead again.</p>
+        <p class="footer-text">
+          Lead capture, instant response, missed-call recovery, CRM follow-up, AI voice agents, and appointment booking systems for service businesses.
+        </p>
       </div>
-      <div class="f-contact">
-        <div><a href="#" onclick="openCalendar(event)">Book a free call →</a></div>
+
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#" onclick="openCalendar(event)">Book a free call →</a>
       </div>
     </div>
-    <div class="wrap copy">© <span id="year"></span> Lead Automates. All rights reserved.</div>
+
+    <div class="wrap copy">
+      © <span id="year"></span> Lead Automates. All rights reserved.
+    </div>
   </footer>
 
   <script>
-    // ===== CONFIG (easy to edit) =====
+    // ===== CONFIG =====
     var CALENDAR_LINK = "https://calendar.app.google/YNy25dtRaPda3dd86";
     var WHATSAPP_NUMBER = "923140479220";
     var CONTACT_EMAIL = "huzaifaaftab614@gmail.com";
     var EMAIL_SUBJECT = "New Lead Automates Strategy Call Request";
 
-    // Open Google Calendar booking page
     function openCalendar(e) {
       if (e) e.preventDefault();
       closeMenu();
       window.open(CALENDAR_LINK, "_blank", "noopener");
     }
 
-    // Mobile menu
-    function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
-    function closeMenu() { document.getElementById('navLinks').classList.remove('open'); }
+    function toggleMenu() {
+      var nav = document.getElementById("navLinks");
+      nav.classList.toggle("open");
+      document.body.classList.toggle("menu-open", nav.classList.contains("open"));
+    }
 
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    function closeMenu() {
+      var nav = document.getElementById("navLinks");
+      if (!nav) return;
+      nav.classList.remove("open");
+      document.body.classList.remove("menu-open");
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
 
     // Auto-detect timezone
     (function () {
       try {
         var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        var select = document.getElementById('timezone');
+        var select = document.getElementById("timezone");
         var found = false;
+
         for (var i = 0; i < select.options.length; i++) {
-          if (select.options[i].value === tz) { select.selectedIndex = i; found = true; break; }
+          if (select.options[i].value === tz) {
+            select.selectedIndex = i;
+            found = true;
+            break;
+          }
         }
+
         if (!found && tz) {
-          var opt = document.createElement('option');
-          opt.value = tz; opt.textContent = tz + ' (detected)';
+          var opt = document.createElement("option");
+          opt.value = tz;
+          opt.textContent = tz + " (detected)";
           select.insertBefore(opt, select.firstChild);
           select.selectedIndex = 0;
         }
-      } catch (e) { /* manual selection still works */ }
+      } catch (e) {}
     })();
 
-    // Plan selection -> set form + scroll
     function selectPlan(planName) {
-      var select = document.getElementById('plan');
+      var select = document.getElementById("plan");
+
       for (var i = 0; i < select.options.length; i++) {
         if (select.options[i].value === planName || select.options[i].text === planName) {
-          select.selectedIndex = i; break;
+          select.selectedIndex = i;
+          break;
         }
       }
-      document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+
+      document.getElementById("book").scrollIntoView({ behavior: "smooth" });
+      refreshEmailFallback();
     }
 
-    // Validation helpers
     function setError(id, isError) {
-      var field = document.getElementById(id).closest('.field');
-      if (isError) { field.classList.add('invalid'); }
-      else { field.classList.remove('invalid'); }
+      var input = document.getElementById(id);
+      if (!input) return;
+
+      var field = input.closest(".field");
+      if (!field) return;
+
+      if (isError) {
+        field.classList.add("invalid");
+      } else {
+        field.classList.remove("invalid");
+      }
     }
-    function isValidEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+    function isValidEmail(value) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+    }
 
     function collect() {
       return {
-        fullName: document.getElementById('fullName').value.trim(),
-        businessName: document.getElementById('businessName').value.trim(),
-        email: document.getElementById('email').value.trim(),
-        phone: document.getElementById('phone').value.trim(),
-        website: document.getElementById('website').value.trim(),
-        plan: document.getElementById('plan').value,
-        date: document.getElementById('date').value,
-        time: document.getElementById('time').value,
-        timezone: document.getElementById('timezone').value,
-        message: document.getElementById('message').value.trim()
+        fullName: document.getElementById("fullName").value.trim(),
+        businessName: document.getElementById("businessName").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        phone: document.getElementById("phone").value.trim(),
+        website: document.getElementById("website").value.trim(),
+        plan: document.getElementById("plan").value,
+        date: document.getElementById("date").value,
+        time: document.getElementById("time").value,
+        timezone: document.getElementById("timezone").value,
+        message: document.getElementById("message").value.trim()
       };
     }
 
-    function validate(d) {
+    function validate(data) {
       var ok = true;
+
       var checks = [
-        ['fullName', !d.fullName],
-        ['businessName', !d.businessName],
-        ['email', !d.email || !isValidEmail(d.email)],
-        ['phone', !d.phone],
-        ['plan', !d.plan],
-        ['date', !d.date],
-        ['time', !d.time],
-        ['timezone', !d.timezone]
+        ["fullName", !data.fullName],
+        ["businessName", !data.businessName],
+        ["email", !data.email || !isValidEmail(data.email)],
+        ["phone", !data.phone],
+        ["plan", !data.plan],
+        ["date", !data.date],
+        ["time", !data.time],
+        ["timezone", !data.timezone]
       ];
-      checks.forEach(function (c) { setError(c[0], c[1]); if (c[1]) ok = false; });
+
+      checks.forEach(function (check) {
+        setError(check[0], check[1]);
+        if (check[1]) ok = false;
+      });
+
       return ok;
     }
 
-    function buildMessage(d) {
+    function buildMessage(data) {
       return [
-        'New Lead Automates Strategy Call Request',
-        '',
-        'Full Name: ' + d.fullName,
-        'Business Name: ' + d.businessName,
-        'Email: ' + d.email,
-        'Phone / WhatsApp: ' + d.phone,
-        'Website: ' + (d.website || '-'),
-        'Selected Plan: ' + d.plan,
-        'Preferred Date: ' + d.date,
-        'Preferred Time: ' + d.time,
-        'Time Zone: ' + d.timezone,
-        'Message: ' + (d.message || '-')
-      ].join('\n');
+        "New Lead Automates Strategy Call Request",
+        "",
+        "Full Name: " + data.fullName,
+        "Business Name: " + data.businessName,
+        "Email: " + data.email,
+        "Phone / WhatsApp: " + data.phone,
+        "Website: " + (data.website || "-"),
+        "Selected Plan: " + data.plan,
+        "Preferred Date: " + data.date,
+        "Preferred Time: " + data.time,
+        "Time Zone: " + data.timezone,
+        "Message: " + (data.message || "-")
+      ].join("\n");
     }
 
-    // Keep the email fallback link in sync as the user types
     function refreshEmailFallback() {
-      var d = collect();
-      var body = buildMessage(d);
-      document.getElementById('emailFallback').href =
-        'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(EMAIL_SUBJECT) +
-        '&body=' + encodeURIComponent(body);
+      var data = collect();
+      var body = buildMessage(data);
+      var link = document.getElementById("emailFallback");
+
+      if (!link) return;
+
+      link.href =
+        "mailto:" + CONTACT_EMAIL +
+        "?subject=" + encodeURIComponent(EMAIL_SUBJECT) +
+        "&body=" + encodeURIComponent(body);
     }
-    document.querySelectorAll('.form-card input, .form-card select, .form-card textarea')
-      .forEach(function (el) { el.addEventListener('input', refreshEmailFallback); });
+
+    document.querySelectorAll(".form-card input, .form-card select, .form-card textarea")
+      .forEach(function (element) {
+        element.addEventListener("input", refreshEmailFallback);
+        element.addEventListener("change", refreshEmailFallback);
+      });
+
     refreshEmailFallback();
 
     function submitForm() {
-      var d = collect();
-      if (!validate(d)) {
-        document.querySelector('.field.invalid').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      var data = collect();
+
+      if (!validate(data)) {
+        var firstInvalid = document.querySelector(".field.invalid");
+        if (firstInvalid) {
+          firstInvalid.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
         return;
       }
-      var msg = buildMessage(d);
+
+      var message = buildMessage(data);
       refreshEmailFallback();
-      // Show the success message (with the email backup link) and open WhatsApp.
-      // A browser can only launch one app per click, so WhatsApp opens automatically
-      // and the email link is offered as a one-tap backup inside the message.
-      document.getElementById('success').classList.add('show');
-      var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg);
-      window.open(url, '_blank', 'noopener');
+
+      document.getElementById("success").classList.add("show");
+
+      var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+      window.open(url, "_blank", "noopener");
     }
+
+    // Reveal animation on scroll
+    (function () {
+      var items = document.querySelectorAll(".reveal");
+
+      if (!("IntersectionObserver" in window)) {
+        items.forEach(function (item) {
+          item.classList.add("show");
+        });
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+
+      items.forEach(function (item) {
+        observer.observe(item);
+      });
+    })();
+
+    // Close mobile menu when clicking outside
+    document.addEventListener("click", function (event) {
+      var nav = document.getElementById("navLinks");
+      var menuBtn = document.querySelector(".menu-btn");
+
+      if (!nav || !menuBtn) return;
+
+      var clickedInsideNav = nav.contains(event.target);
+      var clickedMenu = menuBtn.contains(event.target);
+
+      if (!clickedInsideNav && !clickedMenu) {
+        closeMenu();
+      }
+    });
   </script>
 </body>
 </html>
