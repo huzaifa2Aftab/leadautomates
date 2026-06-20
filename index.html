@@ -4,57 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>Lead Automates — Lead Follow-Up, AI Voice Agents & Booking Automation</title>
-  <meta name="description" content="Lead Automates helps service businesses capture leads, respond instantly, recover missed calls, automate follow-up, connect CRMs, and book more appointments." />
-  <meta name="keywords" content="lead automation, AI voice agents, missed call recovery, lead follow up, CRM automation, appointment booking, WhatsApp automation, service business automation, real estate automation" />
+  <!-- Primary SEO -->
+  <title>Lead Automates | Lead Follow-Up, CRM Automation & AI Voice Agents</title>
+  <meta name="description" content="Lead Automates builds lead follow-up systems for service businesses. Capture leads, reply instantly, recover missed calls, automate follow-ups, connect your CRM, and book more appointments." />
+  <meta name="keywords" content="lead automation, lead follow up automation, CRM automation, AI voice agents, missed call text back, appointment booking automation, WhatsApp automation, service business automation, real estate lead automation, GoHighLevel automation, n8n automation, Zapier automation" />
+  <meta name="author" content="Lead Automates" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#10233f" />
+  <link rel="canonical" href="https://leadautomates.vercel.app/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Lead Automates — Never Lose a Lead Again" />
-  <meta property="og:description" content="Lead capture, instant response, missed-call recovery, CRM follow-up, AI voice agents, and appointment booking systems for service businesses." />
+  <meta property="og:url" content="https://leadautomates.vercel.app/" />
+  <meta property="og:title" content="Lead Automates | Never Lose a Lead Again" />
+  <meta property="og:description" content="Lead capture, instant replies, missed-call recovery, CRM follow-up, AI voice agents, and booking automation for service-based businesses." />
+  <meta property="og:site_name" content="Lead Automates" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lead Automates | Lead Follow-Up Automation" />
+  <meta name="twitter:description" content="Simple automation systems that help service businesses respond faster, follow up better, and book more appointments." />
 
   <!-- Inline Favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2310233f'/%3E%3Cpath d='M8 18l5 5 11-13' fill='none' stroke='%2338d39f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2310233f'/%3E%3Cpath d='M8 18l5 5 11-13' fill='none' stroke='%2318a77d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Lead Automates",
+    "url": "https://leadautomates.vercel.app/",
+    "description": "Lead Automates builds lead follow-up, CRM automation, missed-call recovery, appointment booking, WhatsApp automation, and AI voice agent systems for service businesses.",
+    "areaServed": "Worldwide",
+    "serviceType": [
+      "Lead Automation",
+      "CRM Automation",
+      "AI Voice Agents",
+      "Appointment Booking Automation",
+      "Missed Call Text Back Automation",
+      "WhatsApp Automation"
+    ],
+    "email": "huzaifaaftab614@gmail.com"
+  }
+  </script>
 
   <style>
     :root {
       --ink: #10233f;
-      --ink-2: #203653;
-      --muted: #68758a;
-      --soft: #f5f7fb;
-      --soft-2: #eef4ff;
-      --white: #ffffff;
+      --ink-soft: #203653;
+      --muted: #63728a;
       --blue: #2f6fed;
       --blue-dark: #1f55c8;
       --green: #18a77d;
       --green-dark: #0f8062;
-      --cream: #fff8ee;
-      --line: #dde6f2;
-      --line-soft: rgba(16, 35, 63, 0.1);
+      --bg: #fbfcfe;
+      --soft: #f4f7fb;
+      --soft-blue: #eef4ff;
+      --white: #ffffff;
+      --line: rgba(16, 35, 63, 0.1);
+      --line-strong: rgba(16, 35, 63, 0.15);
       --shadow: 0 14px 40px rgba(16, 35, 63, 0.08);
       --shadow-lg: 0 24px 70px rgba(16, 35, 63, 0.14);
-      --radius: 22px;
-      --radius-sm: 14px;
-      --maxw: 1140px;
+      --radius: 24px;
+      --radius-sm: 16px;
+      --maxw: 1160px;
     }
 
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 88px;
+      scroll-padding-top: 90px;
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
-      background: #fbfcfe;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
       color: var(--ink);
       line-height: 1.65;
       -webkit-font-smoothing: antialiased;
@@ -69,36 +99,42 @@
       color: inherit;
     }
 
+    img,
+    svg {
+      display: block;
+    }
+
     .wrap {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 0 24px;
+      width: min(100% - 40px, var(--maxw));
+      margin-inline: auto;
     }
 
     section {
-      padding: 92px 0;
       position: relative;
+      padding: 96px 0;
     }
 
-    h1, h2, h3 {
-      line-height: 1.12;
-      letter-spacing: -0.035em;
+    h1,
+    h2,
+    h3 {
       color: var(--ink);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
     }
 
     h1 {
-      font-size: clamp(42px, 6vw, 70px);
-      font-weight: 850;
+      font-size: clamp(42px, 6vw, 72px);
+      font-weight: 860;
     }
 
     h2 {
-      font-size: clamp(30px, 4vw, 46px);
-      font-weight: 820;
+      font-size: clamp(31px, 4vw, 48px);
+      font-weight: 840;
     }
 
     h3 {
       font-size: 21px;
-      font-weight: 780;
+      font-weight: 790;
     }
 
     p {
@@ -108,15 +144,15 @@
     .eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 9px;
       width: fit-content;
       padding: 8px 14px;
-      border: 1px solid rgba(47, 111, 237, 0.14);
+      border: 1px solid rgba(47, 111, 237, 0.16);
       border-radius: 999px;
       background: rgba(47, 111, 237, 0.07);
       color: var(--blue-dark);
       font-size: 13px;
-      font-weight: 760;
+      font-weight: 800;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       margin-bottom: 18px;
@@ -126,14 +162,14 @@
       content: "";
       width: 8px;
       height: 8px;
-      border-radius: 50%;
+      border-radius: 99px;
       background: var(--green);
-      box-shadow: 0 0 0 5px rgba(24, 167, 125, 0.12);
+      box-shadow: 0 0 0 5px rgba(24, 167, 125, 0.13);
     }
 
     .section-head {
-      max-width: 760px;
-      margin: 0 auto 50px;
+      max-width: 780px;
+      margin: 0 auto 52px;
       text-align: center;
     }
 
@@ -147,16 +183,17 @@
       align-items: center;
       justify-content: center;
       gap: 9px;
-      padding: 14px 24px;
-      border-radius: 999px;
+      padding: 14px 23px;
+      min-height: 50px;
       border: 1px solid transparent;
+      border-radius: 999px;
+      font: inherit;
       font-size: 15px;
-      font-weight: 780;
+      font-weight: 800;
       text-decoration: none;
       cursor: pointer;
-      transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
       white-space: nowrap;
-      font-family: inherit;
     }
 
     .btn:hover {
@@ -164,30 +201,30 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--blue), #245fd9);
       color: #fff;
-      box-shadow: 0 14px 30px rgba(47, 111, 237, 0.24);
+      background: linear-gradient(135deg, var(--blue), #245fd9);
+      box-shadow: 0 14px 32px rgba(47, 111, 237, 0.25);
     }
 
     .btn-primary:hover {
-      box-shadow: 0 18px 40px rgba(47, 111, 237, 0.34);
+      box-shadow: 0 18px 42px rgba(47, 111, 237, 0.34);
     }
 
     .btn-green {
-      background: linear-gradient(135deg, var(--green), #12936d);
       color: #fff;
-      box-shadow: 0 14px 30px rgba(24, 167, 125, 0.22);
+      background: linear-gradient(135deg, var(--green), #12936d);
+      box-shadow: 0 14px 32px rgba(24, 167, 125, 0.23);
     }
 
     .btn-green:hover {
-      box-shadow: 0 18px 40px rgba(24, 167, 125, 0.32);
+      box-shadow: 0 18px 42px rgba(24, 167, 125, 0.33);
     }
 
     .btn-light {
-      background: rgba(255, 255, 255, 0.85);
       color: var(--ink);
+      background: rgba(255, 255, 255, 0.88);
       border-color: var(--line);
-      box-shadow: 0 8px 24px rgba(16, 35, 63, 0.06);
+      box-shadow: 0 10px 28px rgba(16, 35, 63, 0.06);
     }
 
     .btn-light:hover {
@@ -204,7 +241,7 @@
     .reveal {
       opacity: 0;
       transform: translateY(22px);
-      transition: opacity .75s ease, transform .75s ease;
+      transition: opacity 0.72s ease, transform 0.72s ease;
     }
 
     .reveal.show {
@@ -216,10 +253,10 @@
     header {
       position: sticky;
       top: 0;
-      z-index: 80;
-      background: rgba(251, 252, 254, 0.78);
-      backdrop-filter: blur(18px);
+      z-index: 50;
+      background: rgba(251, 252, 254, 0.82);
       border-bottom: 1px solid rgba(16, 35, 63, 0.08);
+      backdrop-filter: blur(18px);
     }
 
     .nav {
@@ -235,32 +272,32 @@
       align-items: center;
       gap: 11px;
       text-decoration: none;
-      color: var(--ink);
       flex: none;
     }
 
     .logo-mark {
-      width: 38px;
-      height: 38px;
-      border-radius: 12px;
+      width: 39px;
+      height: 39px;
       display: grid;
       place-items: center;
+      border-radius: 13px;
+      color: #fff;
       background:
-        radial-gradient(circle at 70% 20%, rgba(56, 211, 159, 0.9), transparent 27%),
+        radial-gradient(circle at 72% 20%, rgba(24, 167, 125, 0.9), transparent 28%),
         linear-gradient(145deg, #10233f, #1b4278);
-      box-shadow: 0 10px 24px rgba(16, 35, 63, 0.18);
+      box-shadow: 0 10px 26px rgba(16, 35, 63, 0.2);
     }
 
     .logo-mark svg {
       width: 21px;
       height: 21px;
-      color: #fff;
     }
 
     .logo-text {
       font-size: 20px;
-      font-weight: 840;
-      letter-spacing: -0.035em;
+      font-weight: 860;
+      letter-spacing: -0.04em;
+      color: var(--ink);
     }
 
     .logo-text span {
@@ -270,15 +307,15 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 27px;
     }
 
     .nav-links a {
+      color: var(--ink-soft);
       text-decoration: none;
-      color: var(--ink-2);
       font-size: 15px;
-      font-weight: 680;
-      transition: color .2s ease;
+      font-weight: 700;
+      transition: color 0.2s ease;
     }
 
     .nav-links a:hover {
@@ -293,33 +330,33 @@
 
     .menu-btn {
       display: none;
-      border: 0;
-      background: var(--white);
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      cursor: pointer;
-      box-shadow: 0 8px 20px rgba(16, 35, 63, 0.08);
+      width: 43px;
+      height: 43px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
       color: var(--ink);
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(16, 35, 63, 0.06);
     }
 
     .menu-btn span {
       display: block;
       width: 18px;
       height: 2px;
-      background: currentColor;
       margin: 4px auto;
       border-radius: 99px;
+      background: currentColor;
     }
 
     /* Hero */
     .hero {
-      padding: 98px 0 84px;
       overflow: hidden;
+      padding: 100px 0 86px;
       background:
-        radial-gradient(900px 420px at 84% 6%, rgba(47, 111, 237, 0.14), transparent 62%),
-        radial-gradient(820px 380px at 5% 92%, rgba(24, 167, 125, 0.12), transparent 60%),
-        linear-gradient(180deg, #fbfcfe 0%, #f6f9ff 100%);
+        radial-gradient(920px 430px at 86% 8%, rgba(47, 111, 237, 0.15), transparent 64%),
+        radial-gradient(780px 350px at 5% 92%, rgba(24, 167, 125, 0.13), transparent 62%),
+        linear-gradient(180deg, #fbfcfe 0%, #f5f8ff 100%);
     }
 
     .hero::after {
@@ -329,8 +366,8 @@
       background-image:
         linear-gradient(rgba(16, 35, 63, 0.035) 1px, transparent 1px),
         linear-gradient(90deg, rgba(16, 35, 63, 0.035) 1px, transparent 1px);
-      background-size: 46px 46px;
-      mask-image: linear-gradient(to bottom, black, transparent 78%);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, #000, transparent 76%);
       pointer-events: none;
     }
 
@@ -338,18 +375,18 @@
       position: relative;
       z-index: 2;
       display: grid;
-      grid-template-columns: 1.02fr 0.98fr;
-      gap: 56px;
+      grid-template-columns: 1.04fr 0.96fr;
+      gap: 58px;
       align-items: center;
     }
 
     .hero-copy {
-      max-width: 650px;
+      max-width: 670px;
     }
 
     .hero-copy .sub {
+      max-width: 620px;
       margin-top: 22px;
-      max-width: 610px;
       font-size: clamp(17px, 2vw, 20px);
       color: #4b5d77;
     }
@@ -361,28 +398,28 @@
       margin-top: 34px;
     }
 
-    .hero-proof {
+    .trust-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 11px;
       margin-top: 26px;
     }
 
-    .proof-pill {
+    .trust-pill {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       padding: 8px 12px;
-      background: rgba(255, 255, 255, 0.8);
       border: 1px solid rgba(16, 35, 63, 0.08);
       border-radius: 999px;
-      color: var(--ink-2);
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--ink-soft);
       font-size: 13px;
-      font-weight: 680;
+      font-weight: 700;
       box-shadow: 0 8px 18px rgba(16, 35, 63, 0.04);
     }
 
-    .proof-pill svg {
+    .trust-pill svg {
       width: 15px;
       height: 15px;
       color: var(--green);
@@ -393,16 +430,16 @@
       position: relative;
     }
 
-    .dashboard {
+    .system-card {
       position: relative;
-      border: 1px solid rgba(16, 35, 63, 0.1);
-      border-radius: 30px;
-      background: rgba(255, 255, 255, 0.84);
-      box-shadow: var(--shadow-lg);
-      backdrop-filter: blur(16px);
-      overflow: hidden;
       padding: 20px;
-      animation: floatCard 6s ease-in-out infinite;
+      overflow: hidden;
+      border: 1px solid rgba(16, 35, 63, 0.1);
+      border-radius: 31px;
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow-lg);
+      animation: floatCard 6.5s ease-in-out infinite;
     }
 
     @keyframes floatCard {
@@ -410,136 +447,141 @@
       50% { transform: translateY(-10px); }
     }
 
-    .dash-top {
+    .system-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 14px;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 16px;
+      padding-bottom: 17px;
       margin-bottom: 18px;
+      border-bottom: 1px solid rgba(16, 35, 63, 0.09);
     }
 
-    .dash-title {
+    .system-title {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-weight: 780;
+      font-weight: 820;
     }
 
-    .dash-dot {
+    .live-dot {
       width: 12px;
       height: 12px;
-      border-radius: 50%;
+      border-radius: 999px;
       background: var(--green);
       box-shadow: 0 0 0 6px rgba(24, 167, 125, 0.12);
     }
 
-    .dash-status {
-      color: var(--green-dark);
-      background: rgba(24, 167, 125, 0.1);
+    .system-status {
       padding: 6px 10px;
       border-radius: 999px;
+      color: var(--green-dark);
+      background: rgba(24, 167, 125, 0.1);
       font-size: 12px;
-      font-weight: 780;
+      font-weight: 820;
+    }
+
+    .lead-list {
+      display: grid;
+      gap: 11px;
     }
 
     .lead-row {
       display: grid;
       grid-template-columns: auto 1fr auto;
-      gap: 12px;
       align-items: center;
-      padding: 13px;
+      gap: 12px;
+      padding: 14px;
       border: 1px solid rgba(16, 35, 63, 0.08);
-      border-radius: 16px;
+      border-radius: 17px;
       background: #fff;
-      margin-bottom: 10px;
-      box-shadow: 0 8px 18px rgba(16, 35, 63, 0.04);
+      box-shadow: 0 8px 19px rgba(16, 35, 63, 0.04);
     }
 
     .lead-icon {
-      width: 38px;
-      height: 38px;
-      border-radius: 13px;
+      width: 40px;
+      height: 40px;
       display: grid;
       place-items: center;
-      background: var(--soft-2);
+      border-radius: 14px;
       color: var(--blue);
+      background: var(--soft-blue);
+      flex: none;
     }
 
     .lead-icon.green {
-      background: rgba(24, 167, 125, 0.1);
       color: var(--green);
+      background: rgba(24, 167, 125, 0.1);
     }
 
     .lead-icon svg {
-      width: 18px;
-      height: 18px;
+      width: 19px;
+      height: 19px;
     }
 
     .lead-info strong {
       display: block;
-      font-size: 14px;
       color: var(--ink);
+      font-size: 14px;
       line-height: 1.25;
     }
 
     .lead-info span {
       display: block;
-      font-size: 12px;
+      margin-top: 3px;
       color: var(--muted);
-      margin-top: 2px;
+      font-size: 12px;
     }
 
     .lead-tag {
-      font-size: 12px;
-      font-weight: 780;
-      color: var(--blue-dark);
-      background: rgba(47, 111, 237, 0.09);
       padding: 6px 9px;
       border-radius: 999px;
+      color: var(--blue-dark);
+      background: rgba(47, 111, 237, 0.09);
+      font-size: 12px;
+      font-weight: 820;
       white-space: nowrap;
     }
 
-    .automation-flow {
-      margin-top: 18px;
+    .mini-flow {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
+      margin-top: 18px;
     }
 
-    .flow-step {
-      text-align: center;
+    .mini-step {
       padding: 13px 8px;
-      border-radius: 16px;
-      background: linear-gradient(180deg, #ffffff, #f7faff);
       border: 1px solid rgba(16, 35, 63, 0.08);
+      border-radius: 16px;
+      text-align: center;
+      background: linear-gradient(180deg, #fff, #f8fbff);
     }
 
-    .flow-step b {
+    .mini-step b {
       display: block;
-      font-size: 13px;
       color: var(--ink);
+      font-size: 13px;
+      line-height: 1.2;
     }
 
-    .flow-step span {
+    .mini-step span {
       display: block;
       margin-top: 3px;
-      font-size: 11px;
       color: var(--muted);
+      font-size: 11px;
     }
 
-    .floating-note {
+    .floating-card {
       position: absolute;
-      right: -22px;
-      bottom: 28px;
-      max-width: 210px;
-      padding: 14px 15px;
-      border-radius: 18px;
+      right: -18px;
+      bottom: 26px;
+      max-width: 222px;
+      padding: 15px 16px;
+      border-radius: 19px;
       background: var(--ink);
-      color: #fff;
       box-shadow: var(--shadow-lg);
-      animation: floatNote 5.5s ease-in-out infinite;
+      animation: floatNote 5.8s ease-in-out infinite;
     }
 
     @keyframes floatNote {
@@ -547,56 +589,57 @@
       50% { transform: translateY(8px) rotate(-1deg); }
     }
 
-    .floating-note strong {
+    .floating-card strong {
       display: block;
       color: #fff;
       font-size: 13px;
+      line-height: 1.25;
     }
 
-    .floating-note span {
+    .floating-card span {
       display: block;
-      color: #c8d5e9;
+      margin-top: 4px;
+      color: #c7d5e8;
       font-size: 12px;
-      margin-top: 2px;
     }
 
-    /* Stats */
-    .stats {
+    /* Strip */
+    .strip {
       padding: 28px 0;
       background: #fff;
-      border-top: 1px solid var(--line-soft);
-      border-bottom: 1px solid var(--line-soft);
+      border-top: 1px solid rgba(16, 35, 63, 0.08);
+      border-bottom: 1px solid rgba(16, 35, 63, 0.08);
     }
 
-    .stats-grid {
+    .strip-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      gap: 16px;
     }
 
-    .stat {
+    .strip-item {
       padding: 18px;
+      border: 1px solid rgba(16, 35, 63, 0.08);
       border-radius: 18px;
       background: #fbfcfe;
-      border: 1px solid rgba(16, 35, 63, 0.08);
     }
 
-    .stat b {
+    .strip-item b {
       display: block;
-      font-size: 26px;
-      letter-spacing: -0.03em;
       color: var(--ink);
+      font-size: 24px;
+      letter-spacing: -0.03em;
     }
 
-    .stat span {
+    .strip-item span {
       display: block;
       margin-top: 3px;
-      font-size: 13px;
       color: var(--muted);
-      font-weight: 640;
+      font-size: 13px;
+      font-weight: 680;
     }
 
-    /* Cards */
+    /* General Cards */
     .grid {
       display: grid;
       gap: 22px;
@@ -613,28 +656,28 @@
     .card {
       position: relative;
       overflow: hidden;
-      padding: 28px;
+      padding: 29px;
       border: 1px solid rgba(16, 35, 63, 0.08);
       border-radius: var(--radius);
       background: #fff;
       box-shadow: var(--shadow);
-      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
     }
 
     .card::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: radial-gradient(420px 160px at 20% 0%, rgba(47, 111, 237, 0.07), transparent 65%);
+      background: radial-gradient(420px 170px at 20% 0%, rgba(47, 111, 237, 0.07), transparent 68%);
       opacity: 0;
-      transition: opacity .22s ease;
       pointer-events: none;
+      transition: opacity 0.22s ease;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
       border-color: rgba(47, 111, 237, 0.2);
+      box-shadow: var(--shadow-lg);
     }
 
     .card:hover::before {
@@ -643,24 +686,24 @@
 
     .icon {
       position: relative;
-      width: 48px;
-      height: 48px;
-      border-radius: 16px;
+      width: 49px;
+      height: 49px;
       display: grid;
       place-items: center;
-      margin-bottom: 17px;
-      background: rgba(47, 111, 237, 0.09);
+      margin-bottom: 18px;
+      border-radius: 17px;
       color: var(--blue);
+      background: rgba(47, 111, 237, 0.09);
     }
 
     .icon.green {
-      background: rgba(24, 167, 125, 0.1);
       color: var(--green);
+      background: rgba(24, 167, 125, 0.1);
     }
 
     .icon.dark {
-      background: rgba(16, 35, 63, 0.08);
       color: var(--ink);
+      background: rgba(16, 35, 63, 0.08);
     }
 
     .icon svg {
@@ -668,26 +711,83 @@
       height: 23px;
     }
 
-    .card h3 {
+    .card h3,
+    .card p {
       position: relative;
+    }
+
+    .card h3 {
       margin-bottom: 9px;
     }
 
     .card p {
-      position: relative;
       font-size: 15px;
     }
 
     .soft-section {
       background:
-        radial-gradient(700px 340px at 10% 10%, rgba(24, 167, 125, 0.08), transparent 58%),
+        radial-gradient(680px 330px at 10% 8%, rgba(24, 167, 125, 0.08), transparent 60%),
         linear-gradient(180deg, #f7f9fd, #ffffff);
+    }
+
+    /* Problem */
+    .problem-layout {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .problem-copy p {
+      margin-top: 16px;
+      font-size: 17px;
+    }
+
+    .problem-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .problem-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px;
+      border: 1px solid rgba(16, 35, 63, 0.08);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(16, 35, 63, 0.05);
+    }
+
+    .check {
+      flex: none;
+      width: 29px;
+      height: 29px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--green);
+      background: rgba(24, 167, 125, 0.12);
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .problem-item strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--ink);
+      font-size: 16px;
+    }
+
+    .problem-item span {
+      color: var(--muted);
+      font-size: 14px;
     }
 
     /* Process */
     .process {
-      background: var(--ink);
       overflow: hidden;
+      background: var(--ink);
     }
 
     .process::before {
@@ -700,8 +800,13 @@
       pointer-events: none;
     }
 
-    .process .section-head,
-    .process .section-head h2 {
+    .process .wrap {
+      position: relative;
+      z-index: 1;
+    }
+
+    .process .section-head h2,
+    .process .section-head {
       color: #fff;
     }
 
@@ -710,37 +815,35 @@
     }
 
     .steps {
-      position: relative;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
     }
 
     .step {
-      position: relative;
-      padding: 24px;
+      padding: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
       border-radius: 22px;
       background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
       backdrop-filter: blur(12px);
     }
 
     .step-num {
       width: 36px;
       height: 36px;
-      border-radius: 12px;
       display: grid;
       place-items: center;
-      background: rgba(56, 211, 159, 0.16);
-      color: #62f0bd;
-      font-weight: 840;
       margin-bottom: 18px;
+      border-radius: 12px;
+      color: #62f0bd;
+      background: rgba(56, 211, 159, 0.16);
+      font-weight: 900;
     }
 
     .step h3 {
+      margin-bottom: 8px;
       color: #fff;
       font-size: 19px;
-      margin-bottom: 8px;
     }
 
     .step p {
@@ -748,64 +851,10 @@
       font-size: 14px;
     }
 
-    /* Benefits */
-    .benefits-wrap {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 44px;
-      align-items: center;
-    }
-
-    .benefits-copy p {
-      margin-top: 16px;
-      font-size: 17px;
-    }
-
-    .benefit-list {
-      display: grid;
-      gap: 14px;
-    }
-
-    .benefit {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      padding: 18px;
-      border-radius: 18px;
-      background: #fff;
-      border: 1px solid rgba(16, 35, 63, 0.08);
-      box-shadow: 0 10px 28px rgba(16, 35, 63, 0.05);
-    }
-
-    .check {
-      flex: none;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: rgba(24, 167, 125, 0.12);
-      color: var(--green);
-      font-weight: 900;
-      line-height: 1;
-    }
-
-    .benefit strong {
-      display: block;
-      color: var(--ink);
-      font-size: 16px;
-      margin-bottom: 2px;
-    }
-
-    .benefit span {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
     /* Plans */
     .plans {
       background:
-        radial-gradient(650px 260px at 80% 0%, rgba(47, 111, 237, 0.09), transparent 60%),
+        radial-gradient(650px 260px at 80% 0%, rgba(47, 111, 237, 0.09), transparent 62%),
         #f7f9fd;
     }
 
@@ -814,11 +863,11 @@
       display: flex;
       flex-direction: column;
       padding: 30px;
-      border-radius: 26px;
-      background: #fff;
       border: 1px solid rgba(16, 35, 63, 0.09);
+      border-radius: 27px;
+      background: #fff;
       box-shadow: var(--shadow);
-      transition: transform .22s ease, box-shadow .22s ease;
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
     }
 
     .plan:hover {
@@ -827,58 +876,59 @@
     }
 
     .plan.featured {
-      border: 2px solid rgba(47, 111, 237, 0.75);
+      border: 2px solid rgba(47, 111, 237, 0.72);
       box-shadow: 0 26px 72px rgba(47, 111, 237, 0.16);
     }
 
     .plan.featured::before {
-      content: "Best for most businesses";
+      content: "Most popular";
       position: absolute;
       top: -14px;
       left: 24px;
       padding: 6px 13px;
       border-radius: 999px;
-      background: var(--blue);
       color: #fff;
+      background: var(--blue);
       font-size: 12px;
-      font-weight: 820;
+      font-weight: 850;
     }
 
     .plan .tag {
       width: fit-content;
+      margin-bottom: 16px;
       padding: 7px 12px;
       border-radius: 999px;
+      color: var(--ink-soft);
       background: rgba(16, 35, 63, 0.06);
-      color: var(--ink-2);
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 850;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      margin-bottom: 16px;
     }
 
     .plan h3 {
-      font-size: 24px;
       margin-bottom: 8px;
+      font-size: 24px;
     }
 
     .plan .desc {
-      font-size: 15px;
+      min-height: 48px;
       margin-bottom: 20px;
+      font-size: 15px;
     }
 
     .plan ul {
-      list-style: none;
       display: grid;
       gap: 11px;
-      margin-bottom: 24px;
+      margin: 0 0 24px;
+      list-style: none;
     }
 
     .plan li {
       display: flex;
-      gap: 10px;
       align-items: flex-start;
-      color: var(--ink-2);
+      gap: 10px;
+      color: var(--ink-soft);
       font-size: 15px;
     }
 
@@ -887,14 +937,14 @@
       flex: none;
       width: 21px;
       height: 21px;
-      border-radius: 50%;
       display: grid;
       place-items: center;
-      background: rgba(24, 167, 125, 0.12);
+      margin-top: 1px;
+      border-radius: 50%;
       color: var(--green);
+      background: rgba(24, 167, 125, 0.12);
       font-size: 13px;
       font-weight: 900;
-      margin-top: 1px;
     }
 
     .plan .btn {
@@ -902,46 +952,125 @@
       margin-top: auto;
     }
 
-    /* Form */
-    .booking {
+    /* Industries */
+    .industries {
+      padding-top: 84px;
+    }
+
+    .industry-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .industry-pill {
+      padding: 14px 12px;
+      border: 1px solid rgba(16, 35, 63, 0.08);
+      border-radius: 16px;
+      background: #fff;
+      color: var(--ink-soft);
+      text-align: center;
+      font-size: 14px;
+      font-weight: 760;
+      box-shadow: 0 8px 22px rgba(16, 35, 63, 0.04);
+    }
+
+    /* FAQ */
+    .faq-list {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      border: 1px solid rgba(16, 35, 63, 0.09);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(16, 35, 63, 0.05);
+      overflow: hidden;
+    }
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 20px;
+      color: var(--ink);
+      cursor: pointer;
+      font-weight: 820;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--blue);
+      background: rgba(47, 111, 237, 0.08);
+      flex: none;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      padding: 0 20px 19px;
+      font-size: 15px;
+    }
+
+    /* Contact */
+    .contact {
       background:
-        radial-gradient(720px 320px at 15% 10%, rgba(24, 167, 125, 0.09), transparent 60%),
+        radial-gradient(720px 320px at 15% 8%, rgba(24, 167, 125, 0.09), transparent 62%),
         linear-gradient(180deg, #ffffff, #f7f9fd);
     }
 
-    .form-card {
-      max-width: 880px;
+    .contact-card {
+      max-width: 860px;
       margin: 0 auto;
-      padding: 36px;
-      border-radius: 30px;
-      background: rgba(255, 255, 255, 0.92);
+      padding: 38px;
       border: 1px solid rgba(16, 35, 63, 0.09);
+      border-radius: 31px;
+      background: rgba(255, 255, 255, 0.93);
       box-shadow: var(--shadow-lg);
     }
 
-    .calendar-banner {
+    .contact-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 18px;
       flex-wrap: wrap;
       padding: 20px;
-      border-radius: 20px;
+      margin-bottom: 26px;
+      border: 1px solid rgba(16, 35, 63, 0.08);
+      border-radius: 21px;
       background:
         radial-gradient(260px 130px at 90% 0%, rgba(24, 167, 125, 0.18), transparent 70%),
         linear-gradient(135deg, #eef4ff, #fff8ee);
-      border: 1px solid rgba(16, 35, 63, 0.08);
-      margin-bottom: 26px;
     }
 
-    .calendar-banner strong {
+    .contact-top strong {
       display: block;
+      margin-bottom: 2px;
       color: var(--ink);
       font-size: 17px;
-      margin-bottom: 2px;
     }
 
-    .calendar-banner span {
+    .contact-top span {
       color: var(--muted);
       font-size: 14px;
     }
@@ -962,53 +1091,46 @@
     }
 
     .field label {
-      font-size: 14px;
-      font-weight: 760;
-      color: var(--ink);
       margin-bottom: 7px;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 780;
     }
 
-    .field label .req {
+    .field label span {
       color: var(--green);
     }
 
     .field input,
-    .field select,
-    .field textarea {
+    .field select {
       width: 100%;
-      font-family: inherit;
-      font-size: 15px;
-      color: var(--ink);
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 15px;
+      min-height: 51px;
       padding: 13px 14px;
+      border: 1px solid rgba(16, 35, 63, 0.14);
+      border-radius: 15px;
       outline: none;
-      transition: border-color .16s ease, box-shadow .16s ease;
-    }
-
-    .field textarea {
-      min-height: 104px;
-      resize: vertical;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 15px;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
     }
 
     .field input:focus,
-    .field select:focus,
-    .field textarea:focus {
-      border-color: rgba(47, 111, 237, 0.7);
+    .field select:focus {
+      border-color: rgba(47, 111, 237, 0.75);
       box-shadow: 0 0 0 4px rgba(47, 111, 237, 0.1);
     }
 
     .field .err {
       display: none;
+      margin-top: 6px;
       color: #c73737;
       font-size: 13px;
-      margin-top: 6px;
     }
 
     .field.invalid input,
-    .field.invalid select,
-    .field.invalid textarea {
+    .field.invalid select {
       border-color: #c73737;
       box-shadow: 0 0 0 4px rgba(199, 55, 55, 0.08);
     }
@@ -1018,28 +1140,28 @@
     }
 
     .form-actions {
-      margin-top: 24px;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       gap: 14px;
+      margin-top: 24px;
     }
 
     .small-note {
-      font-size: 13px;
       color: var(--muted);
+      font-size: 13px;
     }
 
     .success {
       display: none;
       margin-top: 22px;
       padding: 16px 18px;
-      border-radius: 16px;
-      background: rgba(24, 167, 125, 0.1);
       border: 1px solid rgba(24, 167, 125, 0.22);
+      border-radius: 16px;
       color: var(--green-dark);
-      font-weight: 680;
+      background: rgba(24, 167, 125, 0.1);
       font-size: 14px;
+      font-weight: 700;
     }
 
     .success.show {
@@ -1048,22 +1170,14 @@
 
     .success a {
       color: var(--green-dark);
-      font-weight: 850;
+      font-weight: 900;
     }
 
     /* Footer */
     footer {
       padding: 58px 0 34px;
-      background: var(--ink);
       color: #c9d6e7;
-    }
-
-    .footer-grid {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 28px;
-      flex-wrap: wrap;
+      background: var(--ink);
     }
 
     footer .logo-text {
@@ -1074,9 +1188,17 @@
       color: #79a8ff;
     }
 
+    .footer-grid {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
     .footer-text {
+      max-width: 440px;
       margin-top: 12px;
-      max-width: 430px;
       color: #a9b8cc;
       font-size: 15px;
     }
@@ -1090,7 +1212,7 @@
     .footer-links a {
       color: #dce6f3;
       text-decoration: none;
-      font-weight: 660;
+      font-weight: 690;
     }
 
     .footer-links a:hover {
@@ -1105,32 +1227,31 @@
       font-size: 13px;
     }
 
-    /* Responsive */
-    @media (max-width: 980px) {
+    @media (max-width: 1020px) {
       .hero-grid,
-      .benefits-wrap {
+      .problem-layout {
         grid-template-columns: 1fr;
       }
 
       .hero-copy {
-        max-width: 760px;
+        max-width: 780px;
       }
 
       .hero-visual {
-        max-width: 650px;
+        max-width: 660px;
       }
 
       .steps,
-      .stats-grid {
+      .strip-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .industry-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
-    @media (max-width: 860px) {
-      .grid-3 {
-        grid-template-columns: 1fr 1fr;
-      }
-
+    @media (max-width: 880px) {
       .nav-links {
         position: fixed;
         top: 76px;
@@ -1141,9 +1262,9 @@
         align-items: stretch;
         gap: 0;
         padding: 10px;
+        border: 1px solid var(--line);
         border-radius: 20px;
         background: #fff;
-        border: 1px solid var(--line);
         box-shadow: var(--shadow-lg);
       }
 
@@ -1152,7 +1273,7 @@
       }
 
       .nav-links a {
-        padding: 14px 14px;
+        padding: 14px;
         border-radius: 12px;
       }
 
@@ -1160,22 +1281,26 @@
         background: var(--soft);
       }
 
+      .nav-cta .btn {
+        display: none;
+      }
+
       .menu-btn {
         display: block;
       }
 
-      .nav-cta .btn {
-        display: none;
+      .grid-3 {
+        grid-template-columns: 1fr 1fr;
       }
     }
 
-    @media (max-width: 680px) {
-      section {
-        padding: 68px 0;
+    @media (max-width: 700px) {
+      .wrap {
+        width: min(100% - 34px, var(--maxw));
       }
 
-      .wrap {
-        padding: 0 18px;
+      section {
+        padding: 70px 0;
       }
 
       .hero {
@@ -1185,36 +1310,42 @@
       .grid-3,
       .grid-2,
       .steps,
-      .stats-grid,
-      .form-grid {
+      .strip-grid,
+      .form-grid,
+      .industry-grid {
         grid-template-columns: 1fr;
       }
 
-      .automation-flow {
+      .mini-flow {
         grid-template-columns: 1fr 1fr;
       }
 
-      .floating-note {
+      .floating-card {
         position: static;
-        margin-top: 16px;
         max-width: none;
+        margin-top: 16px;
       }
 
-      .form-card {
+      .contact-card {
         padding: 24px;
-        border-radius: 24px;
-      }
-
-      .footer-links {
-        text-align: left;
+        border-radius: 25px;
       }
 
       .btn {
         width: 100%;
       }
 
-      .hero-actions {
+      .hero-actions,
+      .form-actions {
         width: 100%;
+      }
+
+      .contact-top .btn {
+        width: 100%;
+      }
+
+      .footer-links {
+        text-align: left;
       }
     }
 
@@ -1237,31 +1368,29 @@
     }
   </style>
 </head>
-
 <body>
-
-  <!-- Header -->
   <header>
     <div class="wrap nav">
       <a href="#top" class="logo" aria-label="Lead Automates home">
         <span class="logo-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none">
-            <path d="M5 13.5l4.2 4.2L19 7.8" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 13.5l4.2 4.2L19 7.8" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </span>
         <span class="logo-text">Lead<span>Automates</span></span>
       </a>
 
-      <nav class="nav-links" id="navLinks">
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
         <a href="#services" onclick="closeMenu()">Services</a>
         <a href="#process" onclick="closeMenu()">Process</a>
         <a href="#plans" onclick="closeMenu()">Plans</a>
-        <a href="#book" onclick="closeMenu()">Book a Call</a>
+        <a href="#faq" onclick="closeMenu()">FAQ</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
       </nav>
 
       <div class="nav-cta">
-        <a href="#" class="btn btn-primary" onclick="openCalendar(event)">Book Free Call</a>
-        <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+        <button class="menu-btn" type="button" aria-label="Toggle menu" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
@@ -1270,508 +1399,453 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="top">
-    <div class="wrap hero-grid">
-      <div class="hero-copy reveal">
-        <span class="eyebrow">Lead Automation for Service Businesses</span>
-        <h1>Turn every new lead into a real conversation.</h1>
-        <p class="sub">
-          We build clean lead systems that capture enquiries, reply instantly, recover missed calls, follow up automatically, and book more appointments without adding extra work to your team.
-        </p>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Lead automation for service businesses</span>
+          <h1 id="hero-title">Stop losing leads because your follow-up is too slow.</h1>
+          <p class="sub">
+            Lead Automates builds simple, reliable systems that capture new enquiries, reply instantly, recover missed calls, follow up automatically, and help your team book more qualified appointments.
+          </p>
 
-        <div class="hero-actions">
-          <a href="#plans" class="btn btn-primary">
-            View Plans
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a href="#" class="btn btn-light" onclick="openCalendar(event)">Book a Free Call</a>
+          <div class="hero-actions">
+            <a href="#plans" class="btn btn-primary">
+              View Automation Plans
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-light">Request a Free Call</a>
+          </div>
+
+          <div class="trust-row" aria-label="Key benefits">
+            <span class="trust-pill">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Instant lead response
+            </span>
+            <span class="trust-pill">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Missed-call text-back
+            </span>
+            <span class="trust-pill">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              CRM-ready setup
+            </span>
+          </div>
         </div>
 
-        <div class="hero-proof">
-          <span class="proof-pill">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Instant lead response
-          </span>
-          <span class="proof-pill">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Missed-call recovery
-          </span>
-          <span class="proof-pill">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            CRM-ready setup
-          </span>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="dashboard">
-          <div class="dash-top">
-            <div class="dash-title">
-              <span class="dash-dot"></span>
-              Live Lead System
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="system-card">
+            <div class="system-top">
+              <div class="system-title">
+                <span class="live-dot"></span>
+                Live Lead System
+              </div>
+              <span class="system-status">Running</span>
             </div>
-            <span class="dash-status">Active</span>
-          </div>
 
-          <div class="lead-row">
-            <div class="lead-icon">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v12H8l-4 4V5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <div class="lead-list">
+              <div class="lead-row">
+                <div class="lead-icon">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v12H8l-4 4V5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /></svg>
+                </div>
+                <div class="lead-info">
+                  <strong>New website enquiry</strong>
+                  <span>Auto reply sent immediately</span>
+                </div>
+                <span class="lead-tag">New</span>
+              </div>
+
+              <div class="lead-row">
+                <div class="lead-icon green">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2.1L9 10.6a16 16 0 0 0 4.4 4.4l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /></svg>
+                </div>
+                <div class="lead-info">
+                  <strong>Missed call recovered</strong>
+                  <span>Callback text sent automatically</span>
+                </div>
+                <span class="lead-tag">Saved</span>
+              </div>
+
+              <div class="lead-row">
+                <div class="lead-icon">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                </div>
+                <div class="lead-info">
+                  <strong>Appointment booked</strong>
+                  <span>Reminder sequence scheduled</span>
+                </div>
+                <span class="lead-tag">Booked</span>
+              </div>
             </div>
-            <div class="lead-info">
-              <strong>Website enquiry captured</strong>
-              <span>Reply sent in under one minute</span>
+
+            <div class="mini-flow">
+              <div class="mini-step"><b>Capture</b><span>Forms & calls</span></div>
+              <div class="mini-step"><b>Reply</b><span>SMS / email</span></div>
+              <div class="mini-step"><b>Follow up</b><span>Sequences</span></div>
+              <div class="mini-step"><b>Book</b><span>Calendar</span></div>
             </div>
-            <span class="lead-tag">New</span>
           </div>
 
-          <div class="lead-row">
-            <div class="lead-icon green">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2.1L9 10.6a16 16 0 0 0 4.4 4.4l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <div class="floating-card">
+            <strong>AI voice agents available</strong>
+            <span>For inbound calls, qualification, reminders, and appointment booking.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="strip" aria-label="Service highlights">
+      <div class="wrap strip-grid">
+        <div class="strip-item reveal">
+          <b>24/7</b>
+          <span>Lead response coverage</span>
+        </div>
+        <div class="strip-item reveal">
+          <b>Fast</b>
+          <span>First-touch automation</span>
+        </div>
+        <div class="strip-item reveal">
+          <b>Multi</b>
+          <span>SMS, email, WhatsApp, voice</span>
+        </div>
+        <div class="strip-item reveal">
+          <b>CRM</b>
+          <span>Clean pipeline tracking</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="soft-section" aria-labelledby="problem-title">
+      <div class="wrap problem-layout">
+        <div class="problem-copy reveal">
+          <span class="eyebrow">The problem we fix</span>
+          <h2 id="problem-title">Good leads go cold when nobody follows up properly.</h2>
+          <p>
+            Service businesses do not usually need more complicated software. They need a clean system that makes sure every enquiry is captured, answered, followed up, and moved to the next step.
+          </p>
+        </div>
+
+        <div class="problem-list">
+          <div class="problem-item reveal">
+            <span class="check">✓</span>
+            <div>
+              <strong>New leads get a fast first reply</strong>
+              <span>Website forms, ads, WhatsApp, and calls can trigger automatic messages instantly.</span>
             </div>
-            <div class="lead-info">
-              <strong>Missed call recovered</strong>
-              <span>Callback text sent automatically</span>
+          </div>
+          <div class="problem-item reveal">
+            <span class="check">✓</span>
+            <div>
+              <strong>Missed calls are not ignored</strong>
+              <span>High-intent callers receive a natural text-back so they can continue the conversation.</span>
             </div>
-            <span class="lead-tag">Saved</span>
           </div>
-
-          <div class="lead-row">
-            <div class="lead-icon">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="problem-item reveal">
+            <span class="check">✓</span>
+            <div>
+              <strong>Your pipeline stays organized</strong>
+              <span>Every lead can be tagged, assigned, followed up, and tracked inside your CRM.</span>
             </div>
-            <div class="lead-info">
-              <strong>Appointment booked</strong>
-              <span>Reminder scheduled before the call</span>
+          </div>
+          <div class="problem-item reveal">
+            <span class="check">✓</span>
+            <div>
+              <strong>More appointments get booked</strong>
+              <span>Booking links, reminders, and follow-up messages move leads toward a real call.</span>
             </div>
-            <span class="lead-tag">Booked</span>
-          </div>
-
-          <div class="automation-flow">
-            <div class="flow-step"><b>Capture</b><span>Forms & calls</span></div>
-            <div class="flow-step"><b>Reply</b><span>SMS / email</span></div>
-            <div class="flow-step"><b>Follow up</b><span>Sequences</span></div>
-            <div class="flow-step"><b>Book</b><span>Calendar</span></div>
-          </div>
-        </div>
-
-        <div class="floating-note">
-          <strong>AI voice agents available</strong>
-          <span>For inbound calls, qualification, and appointment booking.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats -->
-  <div class="stats">
-    <div class="wrap stats-grid">
-      <div class="stat reveal">
-        <b>24/7</b>
-        <span>Lead response coverage</span>
-      </div>
-      <div class="stat reveal">
-        <b>1 min</b>
-        <span>Fast first-touch goal</span>
-      </div>
-      <div class="stat reveal">
-        <b>Multi</b>
-        <span>SMS, email, WhatsApp, voice</span>
-      </div>
-      <div class="stat reveal">
-        <b>CRM</b>
-        <span>Organized lead pipeline</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Problem -->
-  <section class="soft-section" id="problem">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">The Real Problem</span>
-        <h2>Most leads are not lost because the offer is bad.</h2>
-        <p>
-          They are lost because the response is slow, the follow-up is manual, and the team gets busy before the lead is properly handled.
-        </p>
-      </div>
-
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <div class="icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Slow first reply</h3>
-          <p>When a lead waits too long, they usually contact another business before your team gets back to them.</p>
-        </div>
-
-        <div class="card reveal">
-          <div class="icon green">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2.1L9 10.6a16 16 0 0 0 4.4 4.4l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Missed calls</h3>
-          <p>Unanswered calls often come from high-intent buyers. A simple recovery text can bring them back.</p>
-        </div>
-
-        <div class="card reveal">
-          <div class="icon dark">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Weak follow-up</h3>
-          <p>Most leads need more than one message. Automation keeps the conversation moving without chasing manually.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">What We Build</span>
-        <h2>A practical system for capturing, replying, following up, and booking.</h2>
-        <p>
-          No complicated dashboards or bloated setup. Just the core automations your business needs to respond faster and stay organized.
-        </p>
-      </div>
-
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <div class="icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Lead capture</h3>
-          <p>Connect website forms, landing pages, Facebook leads, Google leads, WhatsApp enquiries, and call sources.</p>
-        </div>
-
-        <div class="card reveal">
-          <div class="icon green">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h8l-1 8 11-13h-8l1-7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Instant response</h3>
-          <p>Send automatic SMS, email, or WhatsApp messages as soon as a new lead comes in.</p>
-        </div>
-
-        <div class="card reveal">
-          <div class="icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Follow-up sequences</h3>
-          <p>Automatically follow up with leads who do not respond right away, using simple and natural messages.</p>
-        </div>
-
-        <div class="card reveal">
-          <div class="icon green">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2.1L9 10.6a16 16 0 0 0 4.4 4.4l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>AI voice agents</h3>
-          <p>Set up voice agents for inbound calls, lead qualification, missed-call handling, and appointment booking.</p>
-        </div>
-
-        <div class="card reveal">
-          <div class="icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Appointment booking</h3>
-          <p>Send booking links, reminders, and confirmations so more leads turn into scheduled calls.</p>
-        </div>
-
-        <div class="card reveal">
-          <div class="icon green">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14M4 19h16M8 7h8M8 11h8M8 15h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>CRM dashboard</h3>
-          <p>Keep every lead, status, source, note, and appointment organized in one clean system.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section class="process" id="process">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Simple Process</span>
-        <h2>Built around the way your business already works.</h2>
-        <p>
-          We keep the setup focused: understand your current lead flow, connect the right tools, automate the follow-up, then improve it after testing.
-        </p>
-      </div>
-
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step-num">1</div>
-          <h3>Map your lead flow</h3>
-          <p>We review where leads come from, how your team replies, and where opportunities are currently being missed.</p>
-        </div>
-
-        <div class="step reveal">
-          <div class="step-num">2</div>
-          <h3>Connect the tools</h3>
-          <p>Forms, CRM, SMS, email, WhatsApp, calendar, and voice tools are connected into one clear workflow.</p>
-        </div>
-
-        <div class="step reveal">
-          <div class="step-num">3</div>
-          <h3>Automate follow-up</h3>
-          <p>New leads get fast replies, missed calls get recovered, and inactive leads receive natural follow-up messages.</p>
-        </div>
-
-        <div class="step reveal">
-          <div class="step-num">4</div>
-          <h3>Test and improve</h3>
-          <p>We test the system, fix weak points, and make sure your team can manage everything easily.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Benefits -->
-  <section id="benefits">
-    <div class="wrap benefits-wrap">
-      <div class="benefits-copy reveal">
-        <span class="eyebrow">Why It Helps</span>
-        <h2>More speed, more consistency, less manual chasing.</h2>
-        <p>
-          The goal is not to replace your team. The goal is to make sure every lead gets handled properly, even when your team is busy, offline, or dealing with other work.
-        </p>
-      </div>
-
-      <div class="benefit-list">
-        <div class="benefit reveal">
-          <span class="check">✓</span>
-          <div>
-            <strong>Respond before competitors do</strong>
-            <span>New leads receive a fast first message while their interest is still high.</span>
-          </div>
-        </div>
-
-        <div class="benefit reveal">
-          <span class="check">✓</span>
-          <div>
-            <strong>Recover missed calls automatically</strong>
-            <span>Missed callers get a simple callback message instead of being ignored.</span>
-          </div>
-        </div>
-
-        <div class="benefit reveal">
-          <span class="check">✓</span>
-          <div>
-            <strong>Keep every lead organized</strong>
-            <span>Your team can see lead source, status, follow-up stage, and appointment details in one place.</span>
-          </div>
-        </div>
-
-        <div class="benefit reveal">
-          <span class="check">✓</span>
-          <div>
-            <strong>Book more qualified appointments</strong>
-            <span>Booking links, reminders, and follow-up steps help move leads toward a scheduled call.</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Plans -->
-  <section class="plans" id="plans">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Plans</span>
-        <h2>Choose the best starting point.</h2>
-        <p>
-          Start simple, then add more automation as your lead volume grows.
-        </p>
-      </div>
-
-      <div class="grid grid-3">
-        <div class="plan reveal">
-          <span class="tag">Starter</span>
-          <h3>Starter Setup</h3>
-          <p class="desc">For businesses that need a clean lead response system.</p>
-          <ul>
-            <li>Lead source connection</li>
-            <li>Instant SMS or email response</li>
-            <li>Missed-call text-back</li>
-            <li>Basic appointment booking</li>
-            <li>Lead notifications</li>
-          </ul>
-          <button class="btn btn-light" onclick="selectPlan('Starter Setup')">Select Starter Setup</button>
+    <section id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">What we build</span>
+          <h2 id="services-title">Automation that fits the way your business already works.</h2>
+          <p>
+            We keep the setup focused on practical lead conversion systems, not bloated dashboards that nobody uses.
+          </p>
         </div>
 
-        <div class="plan featured reveal">
-          <span class="tag">Popular</span>
-          <h3>Follow-Up System</h3>
-          <p class="desc">For businesses that want automated nurturing and better lead tracking.</p>
-          <ul>
-            <li>Everything in Starter Setup</li>
-            <li>Follow-up sequences</li>
-            <li>WhatsApp integration</li>
-            <li>CRM connection</li>
-            <li>Appointment reminders</li>
-            <li>Lead status updates</li>
-            <li>Simple dashboard</li>
-          </ul>
-          <button class="btn btn-primary" onclick="selectPlan('Follow-Up System')">Select Follow-Up System</button>
-        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+            </div>
+            <h3>Lead capture automation</h3>
+            <p>Connect website forms, landing pages, Facebook leads, Google leads, WhatsApp enquiries, and call sources.</p>
+          </article>
 
-        <div class="plan reveal">
-          <span class="tag">Managed</span>
-          <h3>Managed Growth System</h3>
-          <p class="desc">For businesses that want the full system managed and improved monthly.</p>
-          <ul>
-            <li>Everything in Follow-Up System</li>
-            <li>AI voice agent setup</li>
-            <li>Full CRM integration</li>
-            <li>Ongoing monitoring</li>
-            <li>Fixes and updates</li>
-            <li>Monthly improvements</li>
-            <li>Priority support</li>
-          </ul>
-          <button class="btn btn-green" onclick="selectPlan('Managed Growth System')">Select Managed Growth System</button>
-        </div>
-      </div>
-    </div>
-  </section>
+          <article class="card reveal">
+            <div class="icon green">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h8l-1 8 11-13h-8l1-7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /></svg>
+            </div>
+            <h3>Instant reply workflows</h3>
+            <p>Send SMS, email, or WhatsApp replies as soon as a new lead enters your system.</p>
+          </article>
 
-  <!-- Booking Form -->
-  <section class="booking" id="book">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Get Started</span>
-        <h2>Book a free strategy call.</h2>
-        <p>
-          Share your details and choose a preferred time. We will review your current lead process and suggest the best automation setup.
-        </p>
-      </div>
+          <article class="card reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /></svg>
+            </div>
+            <h3>Follow-up sequences</h3>
+            <p>Automatically follow up with leads who do not respond right away using simple, human-sounding messages.</p>
+          </article>
 
-      <div class="form-card reveal">
-        <div class="calendar-banner">
-          <div>
-            <strong>Want to pick a time directly?</strong>
-            <span>Open the live calendar and choose any available slot.</span>
-          </div>
-          <a href="#" class="btn btn-primary" onclick="openCalendar(event)">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Open Calendar
-          </a>
-        </div>
+          <article class="card reveal">
+            <div class="icon green">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.4 2.1L9 10.6a16 16 0 0 0 4.4 4.4l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /></svg>
+            </div>
+            <h3>Missed-call text back</h3>
+            <p>When a call is missed, the system can send a friendly callback text and notify your team.</p>
+          </article>
 
-        <div class="form-grid">
-          <div class="field">
-            <label>Full Name <span class="req">*</span></label>
-            <input type="text" id="fullName" placeholder="Your full name" />
-            <span class="err">Please enter your full name.</span>
-          </div>
+          <article class="card reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </div>
+            <h3>Booking automation</h3>
+            <p>Send booking links, confirmations, reminders, and no-show follow-ups so more leads become appointments.</p>
+          </article>
 
-          <div class="field">
-            <label>Business Name <span class="req">*</span></label>
-            <input type="text" id="businessName" placeholder="Your business name" />
-            <span class="err">Please enter your business name.</span>
-          </div>
-
-          <div class="field">
-            <label>Email <span class="req">*</span></label>
-            <input type="email" id="email" placeholder="you@company.com" />
-            <span class="err">Please enter a valid email.</span>
-          </div>
-
-          <div class="field">
-            <label>Phone / WhatsApp <span class="req">*</span></label>
-            <input type="tel" id="phone" placeholder="+1 555 000 0000" />
-            <span class="err">Please enter your phone or WhatsApp number.</span>
-          </div>
-
-          <div class="field">
-            <label>Website</label>
-            <input type="text" id="website" placeholder="Optional" />
-            <span class="err"></span>
-          </div>
-
-          <div class="field">
-            <label>Selected Plan <span class="req">*</span></label>
-            <select id="plan">
-              <option value="">Select a plan</option>
-              <option>Starter Setup</option>
-              <option>Follow-Up System</option>
-              <option>Managed Growth System</option>
-              <option>Not sure yet</option>
-            </select>
-            <span class="err">Please select a plan.</span>
-          </div>
-
-          <div class="field">
-            <label>Preferred Date <span class="req">*</span></label>
-            <input type="date" id="date" />
-            <span class="err">Please choose a date.</span>
-          </div>
-
-          <div class="field">
-            <label>Preferred Time <span class="req">*</span></label>
-            <select id="time">
-              <option value="">Select a time</option>
-              <option>9:00 AM</option>
-              <option>10:00 AM</option>
-              <option>11:00 AM</option>
-              <option>12:00 PM</option>
-              <option>1:00 PM</option>
-              <option>2:00 PM</option>
-              <option>3:00 PM</option>
-              <option>4:00 PM</option>
-              <option>5:00 PM</option>
-              <option>6:00 PM</option>
-            </select>
-            <span class="err">Please choose a time.</span>
-          </div>
-
-          <div class="field">
-            <label>Time Zone <span class="req">*</span></label>
-            <select id="timezone">
-              <option value="America/Toronto">America/Toronto</option>
-              <option value="America/New_York">America/New_York</option>
-              <option value="America/Vancouver">America/Vancouver</option>
-              <option value="America/Chicago">America/Chicago</option>
-              <option value="America/Los_Angeles">America/Los_Angeles</option>
-              <option value="Europe/London">Europe/London</option>
-              <option value="Asia/Karachi">Asia/Karachi</option>
-              <option value="Australia/Sydney">Australia/Sydney</option>
-            </select>
-            <span class="err">Please select a time zone.</span>
-          </div>
-
-          <div class="field full">
-            <label>Message</label>
-            <textarea id="message" placeholder="Tell us about your business, lead sources, CRM, or current follow-up problem."></textarea>
-            <span class="err"></span>
-          </div>
-        </div>
-
-        <div class="form-actions">
-          <button class="btn btn-green" onclick="submitForm()">Send Request</button>
-          <span class="small-note">Your request opens in WhatsApp so you can send it directly.</span>
-        </div>
-
-        <div class="success" id="success">
-          Thank you. Your request has been prepared. WhatsApp has opened so you can send the message and confirm your call.
-          <br />
-          Prefer email? <a id="emailFallback" href="#">Send the same details by email</a>, or <a href="#" onclick="openCalendar(event)">pick a time on the calendar</a>.
+          <article class="card reveal">
+            <div class="icon green">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14M4 19h16M8 7h8M8 11h8M8 15h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+            </div>
+            <h3>CRM and dashboard setup</h3>
+            <p>Keep lead source, status, notes, tasks, appointments, and follow-up stages organized in one clean pipeline.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Simple process</span>
+          <h2 id="process-title">A clear setup process from idea to working system.</h2>
+          <p>
+            We map your current lead flow, build the automation, test every step, and leave you with a system your team can actually use.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <h3>Review your lead flow</h3>
+            <p>We look at where leads come from, how your team replies, and where follow-up is breaking.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">2</div>
+            <h3>Connect your tools</h3>
+            <p>Forms, CRM, email, SMS, WhatsApp, calendar, and voice tools are connected into one workflow.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">3</div>
+            <h3>Build the automations</h3>
+            <p>New leads get responses, missed calls get recovered, and follow-ups happen without manual chasing.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">4</div>
+            <h3>Test and improve</h3>
+            <p>We test the full journey and adjust the copy, timing, tags, and notifications where needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans" id="plans" aria-labelledby="plans-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Plans</span>
+          <h2 id="plans-title">Choose the system you want to start with.</h2>
+          <p>
+            Start with the essentials or build a complete lead management system with CRM, follow-up, and AI calling.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="plan reveal">
+            <span class="tag">Starter</span>
+            <h3>Starter Lead System</h3>
+            <p class="desc">For businesses that need a clean first-response setup.</p>
+            <ul>
+              <li>Lead form or source connection</li>
+              <li>Instant SMS or email reply</li>
+              <li>Missed-call text-back</li>
+              <li>Lead notification to your team</li>
+              <li>Basic booking link setup</li>
+            </ul>
+            <button class="btn btn-light" type="button" onclick="selectPlan('Starter Lead System')">Select Starter</button>
+          </article>
+
+          <article class="plan featured reveal">
+            <span class="tag">Growth</span>
+            <h3>Follow-Up & CRM System</h3>
+            <p class="desc">For teams that want better lead tracking and automated follow-up.</p>
+            <ul>
+              <li>Everything in Starter</li>
+              <li>Multi-step follow-up sequence</li>
+              <li>CRM pipeline and tags</li>
+              <li>WhatsApp or email automation</li>
+              <li>Appointment reminders</li>
+              <li>Lead status updates</li>
+            </ul>
+            <button class="btn btn-primary" type="button" onclick="selectPlan('Follow-Up & CRM System')">Select Growth</button>
+          </article>
+
+          <article class="plan reveal">
+            <span class="tag">Advanced</span>
+            <h3>AI Voice & Managed System</h3>
+            <p class="desc">For businesses that want calling, qualification, and ongoing improvements.</p>
+            <ul>
+              <li>Everything in Growth</li>
+              <li>AI voice agent setup</li>
+              <li>Lead qualification flow</li>
+              <li>Advanced CRM automation</li>
+              <li>Ongoing updates and fixes</li>
+              <li>Priority support</li>
+            </ul>
+            <button class="btn btn-green" type="button" onclick="selectPlan('AI Voice & Managed System')">Select Advanced</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="industries soft-section" aria-labelledby="industries-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Who this is for</span>
+          <h2 id="industries-title">Built for businesses where speed and follow-up matter.</h2>
+          <p>
+            The system can be adjusted for different lead sources, teams, booking processes, and CRMs.
+          </p>
+        </div>
+
+        <div class="industry-grid reveal">
+          <div class="industry-pill">Real Estate</div>
+          <div class="industry-pill">Home Services</div>
+          <div class="industry-pill">Clinics</div>
+          <div class="industry-pill">Salons</div>
+          <div class="industry-pill">Agencies</div>
+          <div class="industry-pill">Consultants</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Common questions before starting.</h2>
+          <p>
+            A few simple answers about how the automation setup usually works.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="reveal">
+            <summary>Which tools can you work with?</summary>
+            <p>We can build systems with GoHighLevel, n8n, Make, Zapier, Airtable, Google Sheets, WhatsApp, Twilio, Vapi, Retell, Calendly, Google Calendar, and other CRM or API-based tools.</p>
+          </details>
+          <details class="reveal">
+            <summary>Do I need a CRM before starting?</summary>
+            <p>No. If you already have a CRM, we can connect it. If you do not, we can recommend a simple setup based on your business and lead volume.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can this work for missed calls?</summary>
+            <p>Yes. Missed-call recovery can send an automatic text-back, notify your team, create or update the lead, and trigger follow-up if the lead does not reply.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can you add AI voice agents?</summary>
+            <p>Yes. AI voice agents can help with inbound calls, lead qualification, basic FAQs, reminders, and appointment booking when the use case is clear.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Get started</span>
+          <h2 id="contact-title">Tell us which plan you want to discuss.</h2>
+          <p>
+            Fill in your details and select a plan. Your request will open in WhatsApp so you can send it directly.
+          </p>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="contact-top">
+            <div>
+              <strong>Prefer booking directly?</strong>
+              <span>Open the calendar and choose a time that works for you.</span>
+            </div>
+            <a href="#" class="btn btn-primary" onclick="openCalendar(event)">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Open Calendar
+            </a>
+          </div>
+
+          <form id="leadForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="fullName">Name <span>*</span></label>
+                <input type="text" id="fullName" name="name" placeholder="Your name" autocomplete="name" />
+                <span class="err">Please enter your name.</span>
+              </div>
+
+              <div class="field">
+                <label for="email">Email <span>*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+                <span class="err">Please enter a valid email.</span>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone <span>*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 555 000 0000" autocomplete="tel" />
+                <span class="err">Please enter your phone number.</span>
+              </div>
+
+              <div class="field">
+                <label for="plan">Select Plan <span>*</span></label>
+                <select id="plan" name="plan">
+                  <option value="">Select a plan</option>
+                  <option value="Starter Lead System">Starter Lead System</option>
+                  <option value="Follow-Up & CRM System">Follow-Up & CRM System</option>
+                  <option value="AI Voice & Managed System">AI Voice & Managed System</option>
+                </select>
+                <span class="err">Please select a plan.</span>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-green" type="submit">Send Request on WhatsApp</button>
+              <span class="small-note">You can also use the email fallback after submitting.</span>
+            </div>
+          </form>
+
+          <div class="success" id="successMessage">
+            Your request is ready. WhatsApp has opened so you can send the message directly.
+            <br />
+            Prefer email? <a href="#" id="emailFallback">Send the same details by email</a>.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer>
     <div class="wrap footer-grid">
       <div>
         <a href="#top" class="logo" aria-label="Lead Automates home">
           <span class="logo-mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
-              <path d="M5 13.5l4.2 4.2L19 7.8" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 13.5l4.2 4.2L19 7.8" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </span>
           <span class="logo-text">Lead<span>Automates</span></span>
@@ -1784,7 +1858,7 @@
       <div class="footer-links">
         <a href="#services">Services</a>
         <a href="#plans">Plans</a>
-        <a href="#" onclick="openCalendar(event)">Book a free call →</a>
+        <a href="#contact">Get started →</a>
       </div>
     </div>
 
@@ -1798,10 +1872,10 @@
     var CALENDAR_LINK = "https://calendar.app.google/YNy25dtRaPda3dd86";
     var WHATSAPP_NUMBER = "923140479220";
     var CONTACT_EMAIL = "huzaifaaftab614@gmail.com";
-    var EMAIL_SUBJECT = "New Lead Automates Strategy Call Request";
+    var EMAIL_SUBJECT = "New Lead Automates Plan Request";
 
-    function openCalendar(e) {
-      if (e) e.preventDefault();
+    function openCalendar(event) {
+      if (event) event.preventDefault();
       closeMenu();
       window.open(CALENDAR_LINK, "_blank", "noopener");
     }
@@ -1821,53 +1895,27 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Auto-detect timezone
-    (function () {
-      try {
-        var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        var select = document.getElementById("timezone");
-        var found = false;
-
-        for (var i = 0; i < select.options.length; i++) {
-          if (select.options[i].value === tz) {
-            select.selectedIndex = i;
-            found = true;
-            break;
-          }
-        }
-
-        if (!found && tz) {
-          var opt = document.createElement("option");
-          opt.value = tz;
-          opt.textContent = tz + " (detected)";
-          select.insertBefore(opt, select.firstChild);
-          select.selectedIndex = 0;
-        }
-      } catch (e) {}
-    })();
-
     function selectPlan(planName) {
-      var select = document.getElementById("plan");
-
-      for (var i = 0; i < select.options.length; i++) {
-        if (select.options[i].value === planName || select.options[i].text === planName) {
-          select.selectedIndex = i;
+      var planSelect = document.getElementById("plan");
+      for (var i = 0; i < planSelect.options.length; i++) {
+        if (planSelect.options[i].value === planName) {
+          planSelect.selectedIndex = i;
           break;
         }
       }
 
-      document.getElementById("book").scrollIntoView({ behavior: "smooth" });
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
       refreshEmailFallback();
     }
 
-    function setError(id, isError) {
+    function setError(id, hasError) {
       var input = document.getElementById(id);
       if (!input) return;
 
       var field = input.closest(".field");
       if (!field) return;
 
-      if (isError) {
+      if (hasError) {
         field.classList.add("invalid");
       } else {
         field.classList.remove("invalid");
@@ -1878,33 +1926,23 @@
       return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
     }
 
-    function collect() {
+    function collectFormData() {
       return {
-        fullName: document.getElementById("fullName").value.trim(),
-        businessName: document.getElementById("businessName").value.trim(),
+        name: document.getElementById("fullName").value.trim(),
         email: document.getElementById("email").value.trim(),
         phone: document.getElementById("phone").value.trim(),
-        website: document.getElementById("website").value.trim(),
-        plan: document.getElementById("plan").value,
-        date: document.getElementById("date").value,
-        time: document.getElementById("time").value,
-        timezone: document.getElementById("timezone").value,
-        message: document.getElementById("message").value.trim()
+        plan: document.getElementById("plan").value
       };
     }
 
-    function validate(data) {
+    function validateForm(data) {
       var ok = true;
 
       var checks = [
-        ["fullName", !data.fullName],
-        ["businessName", !data.businessName],
+        ["fullName", !data.name],
         ["email", !data.email || !isValidEmail(data.email)],
         ["phone", !data.phone],
-        ["plan", !data.plan],
-        ["date", !data.date],
-        ["time", !data.time],
-        ["timezone", !data.timezone]
+        ["plan", !data.plan]
       ];
 
       checks.forEach(function (check) {
@@ -1917,46 +1955,40 @@
 
     function buildMessage(data) {
       return [
-        "New Lead Automates Strategy Call Request",
+        "New Lead Automates Plan Request",
         "",
-        "Full Name: " + data.fullName,
-        "Business Name: " + data.businessName,
+        "Name: " + data.name,
         "Email: " + data.email,
-        "Phone / WhatsApp: " + data.phone,
-        "Website: " + (data.website || "-"),
-        "Selected Plan: " + data.plan,
-        "Preferred Date: " + data.date,
-        "Preferred Time: " + data.time,
-        "Time Zone: " + data.timezone,
-        "Message: " + (data.message || "-")
+        "Phone: " + data.phone,
+        "Selected Plan: " + data.plan
       ].join("\n");
     }
 
     function refreshEmailFallback() {
-      var data = collect();
+      var fallback = document.getElementById("emailFallback");
+      if (!fallback) return;
+
+      var data = collectFormData();
       var body = buildMessage(data);
-      var link = document.getElementById("emailFallback");
 
-      if (!link) return;
-
-      link.href =
+      fallback.href =
         "mailto:" + CONTACT_EMAIL +
         "?subject=" + encodeURIComponent(EMAIL_SUBJECT) +
         "&body=" + encodeURIComponent(body);
     }
 
-    document.querySelectorAll(".form-card input, .form-card select, .form-card textarea")
-      .forEach(function (element) {
-        element.addEventListener("input", refreshEmailFallback);
-        element.addEventListener("change", refreshEmailFallback);
-      });
+    document.querySelectorAll("#leadForm input, #leadForm select").forEach(function (element) {
+      element.addEventListener("input", refreshEmailFallback);
+      element.addEventListener("change", refreshEmailFallback);
+    });
 
     refreshEmailFallback();
 
-    function submitForm() {
-      var data = collect();
+    document.getElementById("leadForm").addEventListener("submit", function (event) {
+      event.preventDefault();
 
-      if (!validate(data)) {
+      var data = collectFormData();
+      if (!validateForm(data)) {
         var firstInvalid = document.querySelector(".field.invalid");
         if (firstInvalid) {
           firstInvalid.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -1966,12 +1998,11 @@
 
       var message = buildMessage(data);
       refreshEmailFallback();
+      document.getElementById("successMessage").classList.add("show");
 
-      document.getElementById("success").classList.add("show");
-
-      var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
-      window.open(url, "_blank", "noopener");
-    }
+      var whatsappUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+      window.open(whatsappUrl, "_blank", "noopener");
+    });
 
     // Reveal animation on scroll
     (function () {
@@ -1991,20 +2022,17 @@
             observer.unobserve(entry.target);
           }
         });
-      }, {
-        threshold: 0.12
-      });
+      }, { threshold: 0.12 });
 
       items.forEach(function (item) {
         observer.observe(item);
       });
     })();
 
-    // Close mobile menu when clicking outside
+    // Close mobile menu when user clicks outside it
     document.addEventListener("click", function (event) {
       var nav = document.getElementById("navLinks");
       var menuBtn = document.querySelector(".menu-btn");
-
       if (!nav || !menuBtn) return;
 
       var clickedInsideNav = nav.contains(event.target);
